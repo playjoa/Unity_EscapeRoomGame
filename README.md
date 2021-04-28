@@ -6,7 +6,8 @@
 Development Status: <strong> Playable to end! </strong>
 
 ### Developement info:
-Developed in Unity <strong>2020.3.5f1</strong> using URP <strong>v10.4.0.</strong> <br>
+Developed in Unity <strong>2019.4</strong> using URP <strong> v10.4.0. </strong> <br>
+Baked lights in Unity 2020.3
 
 ### Assets Used: <br>
 
