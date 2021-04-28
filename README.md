@@ -1,7 +1,7 @@
 # Unity_EscapeRoomGame
 
 ## FPS Escape Room Game!
-![1](Screenshots/Screenshot 0.png)
+![1](Screenshots/Screenshot_0.png)
 
 Development Status: <strong>Almost Playable to end!</strong>
 
@@ -29,7 +29,7 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 <strong> Mouse Hold: Grab itens </strong>  <br>
 
 ## Screemshots!
-![1](Screenshots/Screenshot 1.png)
+![1](Screenshots/Screenshot_1.png)
 
 ## Puzzle Solutions (SPOILERS)!
 - Coming soon -
