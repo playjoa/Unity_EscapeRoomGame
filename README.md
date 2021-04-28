@@ -34,7 +34,7 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
 <strong> Mouse Click: </strong> Interact <br>
 <strong> Mouse Hold: </strong> Grab itens <br>
 
-## Screenshots!
+## Gameplay screenshot!
 ![1](Screenshots/Screenshot_1.png)
 
 # <strong> Puzzle Solutions (SPOILERS)! </strong>
