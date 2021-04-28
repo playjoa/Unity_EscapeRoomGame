@@ -30,4 +30,4 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 ![1](Screenshots/Screenshot_1.png)
 
 ## Puzzle Solutions (SPOILERS)!
-- Coming soon -
+- <Coming soon>
