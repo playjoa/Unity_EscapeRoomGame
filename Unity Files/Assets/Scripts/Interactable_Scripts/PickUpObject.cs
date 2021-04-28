@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PickUpObject : MonoBehaviour, InteractableObject
 {
@@ -11,7 +9,7 @@ public class PickUpObject : MonoBehaviour, InteractableObject
     private Transform pickUpLocation;
 
     private Rigidbody rb;
-    private bool canPickUp = true, isPickingUp;
+    private bool canPickUp = true;
 
     private Transform previousParent;
 
@@ -73,7 +71,7 @@ public class PickUpObject : MonoBehaviour, InteractableObject
         transform.parent = pickUpLocation;
     }
 
-    void LetGoObject()
+    public void LetGoObject()
     {
         if (!canPickUp)
             return;

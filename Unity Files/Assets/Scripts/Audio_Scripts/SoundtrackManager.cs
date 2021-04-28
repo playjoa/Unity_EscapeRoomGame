@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class SoundtrackManager : MonoBehaviour {
@@ -34,7 +31,6 @@ public class SoundtrackManager : MonoBehaviour {
         return Random.Range(0, qtd);
     }
 
-    //Buscar musica aleatoria dentro da playlist de menu
     void TocarMusicaAleatoriaMenu()
     {
         emissor.clip = playlistMenu[RetornarAleatorio(playlistMenu.Length)];
@@ -42,7 +38,6 @@ public class SoundtrackManager : MonoBehaviour {
         Invoke("TocarMusicaAleatoriaMenu", emissor.clip.length);
     }
 
-    //Buscar musica aleatoria dentro da playlist de gameplay
     void TocarMusicaAleatoriaGameplay()
     {
         emissor.clip = playlistGameplay[RetornarAleatorio(playlistGameplay.Length)];

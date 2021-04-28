@@ -68,7 +68,6 @@
 
     public static void SwitchToGameOver()
     {
-        SetState(State.Failed);
         UI_Manager.Instance.ToggleGameOverScreen();
     }
 
@@ -95,7 +94,6 @@
         
         SetState(previousStateBeforePausing);
     }
-
 
     public static void SwitchToTutorial()
     {
@@ -125,7 +123,6 @@ public enum State
     PlayingFPS, 
     Interacting,
     Paused,
-    Failed,
     Complete,
     OnCutscene
 }

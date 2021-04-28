@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -34,7 +33,7 @@ public class InitialLoader : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
 
         AsyncOperation opperation = SceneManager.LoadSceneAsync(sceneToLoad);
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - pickUpHolder
   - music
+  - outofbounds
   layers:
   - Default
   - TransparentFX

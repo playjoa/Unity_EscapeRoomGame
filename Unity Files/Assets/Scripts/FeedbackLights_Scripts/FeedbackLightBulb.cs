@@ -5,8 +5,6 @@ public class FeedbackLightBulb : MonoBehaviour
     [SerializeField]
     private GameObject lightBulbOn, lightBulbOff;
 
-    private bool lightIsOn = true;
-
     private void Start()
     {
         TurnOffLigh();

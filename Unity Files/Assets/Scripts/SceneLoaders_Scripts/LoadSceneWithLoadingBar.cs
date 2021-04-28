@@ -29,7 +29,7 @@ public class LoadSceneWithLoadingBar : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
 
         AsyncOperation opperation = SceneManager.LoadSceneAsync(sceneToLoad);
 

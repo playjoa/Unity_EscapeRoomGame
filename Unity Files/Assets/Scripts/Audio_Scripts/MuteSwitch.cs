@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class MuteSwitch : MonoBehaviour {
 
@@ -17,14 +14,19 @@ public class MuteSwitch : MonoBehaviour {
 
     private void OnEnable()
     {
+        Initialize();
+    }
+
+    private void Initialize()
+    {
         isFXMuted = DevolverBoolMemoria("fxMuted");
         isMusicMute = DevolverBoolMemoria("musicMuted");
 
-        AtualizarSpriteSwap();
-        FazerEfeitoNaMusica();
+        SpriteSwap();
+        TurnDownMusicVolume();
     }
 
-    void NovoValorBoolMemoria(string id, bool valor) 
+    void SetNewBoolValue(string id, bool valor) 
     {
         if (!valor)
             PlayerPrefs.SetInt(id, 0);
@@ -40,7 +42,22 @@ public class MuteSwitch : MonoBehaviour {
             return true;
     }
 
-    void AtualizarSpriteSwap()
+    void TurnDownMusicVolume()
+    {
+        try
+        {
+            GameObject music = GameObject.FindGameObjectWithTag("music");
+            AudioSource musica = music.GetComponent<AudioSource>();
+
+            if (isMusicMute)
+                musica.volume = 0;
+            else
+                musica.volume = 0.45f;
+        }
+        catch { Debug.Log("Soundtrack nao encontrada!"); }
+    }
+
+    void SpriteSwap()
     {
         if (isFXMuted)
             imgFXSound.sprite = sprFX[1];
@@ -55,35 +72,20 @@ public class MuteSwitch : MonoBehaviour {
     public void MuteFX()
     {
         isFXMuted = !isFXMuted;
-        
-        NovoValorBoolMemoria("fxMuted", isFXMuted);
 
-        AtualizarSpriteSwap();
-    }
+        SetNewBoolValue("fxMuted", isFXMuted);
 
-    void FazerEfeitoNaMusica() 
-    {
-        try
-        {
-            GameObject music = GameObject.FindGameObjectWithTag("music");
-            AudioSource musica = music.GetComponent<AudioSource>();
-
-            if (isMusicMute)
-                musica.volume = 0;
-            else
-                musica.volume = 0.45f;
-        }
-        catch { Debug.Log("Soundtrack nao encontrada!");  }
+        SpriteSwap();
     }
 
     public void MuteMusic()
     {
         isMusicMute = !isMusicMute;
 
-        NovoValorBoolMemoria("musicMuted", isMusicMute);
+        SetNewBoolValue("musicMuted", isMusicMute);
 
-        AtualizarSpriteSwap();
+        SpriteSwap();
 
-        FazerEfeitoNaMusica();
+        TurnDownMusicVolume();
     }
 }

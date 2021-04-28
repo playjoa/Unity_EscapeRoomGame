@@ -1,13 +1,42 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
+    [System.Serializable]
+    public class UI_Item
+    {
+        public string idItem = "gameplay";
+        public GameObject item;
+
+        public void ActivateItem()
+        {
+            if (!item.activeSelf)
+                item.SetActive(true);
+        }
+
+        public void DeactivateItem()
+        {
+            if (item.activeSelf)
+                item.SetActive(false);
+        }
+
+        public void ToggleItem(bool value)
+        {
+            if (item.activeSelf != value)
+                item.SetActive(value);
+        }
+    }
+
+    [SerializeField]
+    private List<UI_Item> UI_screens;
+
     [SerializeField]
     private Color colorComplete = Color.green, colorIncomplete = Color.red;
 
     [SerializeField]
-    private GameObject telaGameplay, telaNumericTask, cardPuzzle, telaNote, telaTutorial, telaPaused, telaGameOver;
+    private GameObject cardPuzzle;
 
     [SerializeField]
     private Text txtTip, txtCurrentPassword, txtStatsPuzzle, txtDescPuzzle, txtNote, txtTimer, txtGameOverText;
@@ -16,6 +45,8 @@ public class UI_Manager : MonoBehaviour
     private Image bgNumericTask;
 
     public static UI_Manager Instance;
+    
+    private Dictionary<string, UI_Item> ui_Itens;
 
     private void Awake()
     {
@@ -23,6 +54,41 @@ public class UI_Manager : MonoBehaviour
             Instance = this;
         else
             Destroy(this);
+
+        CreateUI_ScreenDictionary();
+    }
+
+    void CreateUI_ScreenDictionary()
+    {
+        ui_Itens = new Dictionary<string, UI_Item>();
+
+        foreach (UI_Item screen in UI_screens)
+            ui_Itens.Add(screen.idItem, screen);
+    }
+
+    void ActivateIndividualScreen(string idScreen)
+    {
+        if (!ui_Itens.ContainsKey(idScreen))
+        {
+            Debug.LogWarning("NO UI_ITEM WITH ID: " + ui_Itens);
+            return;
+        }
+
+        foreach (var item in ui_Itens)
+        {
+            if (item.Key == idScreen)
+            {
+                item.Value.ActivateItem();
+                return;
+            }
+            item.Value.DeactivateItem();
+        }
+    }
+
+    void DeactivateAllScreen()
+    {
+        foreach (var item in ui_Itens)
+            item.Value.DeactivateItem();
     }
 
     public void Set_TipText(string valueToSet) 
@@ -32,7 +98,7 @@ public class UI_Manager : MonoBehaviour
 
     public void Set_Note(string valueToSet)
     {
-        telaNote.SetActive(true);
+        ActivateIndividualScreen("note");
         txtNote.text = valueToSet;
     }
 
@@ -60,47 +126,32 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleTutorialScreen()
     {
-        telaTutorial.SetActive(true);
-        telaGameplay.SetActive(false);
-        telaNumericTask.SetActive(false);
-        telaNote.SetActive(false);
+        ActivateIndividualScreen("tutorial");
     }
 
     public void ToggleGamePlayScreen()
     {
-        telaTutorial.SetActive(false);
-        telaGameplay.SetActive(true);
-        telaNumericTask.SetActive(false);
-        telaNote.SetActive(false);
+        ActivateIndividualScreen("gameplay");
     }
 
     public void ToggleNumericTaskScreen()
     {
-        telaTutorial.SetActive(false);
-        telaGameplay.SetActive(false);
-        telaNote.SetActive(false);
-        telaNumericTask.SetActive(true);
+        ActivateIndividualScreen("numeric");
     }
 
     public void ToggleCutscene()
     {
-        telaTutorial.SetActive(false);
-        telaGameplay.SetActive(false);
-        telaNumericTask.SetActive(false);
-        telaNote.SetActive(false);
+        DeactivateAllScreen();
     }
 
     public void ToggleGameOverScreen()
     {
-        telaGameOver.SetActive(true);
-        telaGameplay.SetActive(false);
-        telaNote.SetActive(false);
-        telaNumericTask.SetActive(false);
+        ActivateIndividualScreen("gameover");
     }
 
     public void TogglePauseScreen(bool value)
     {
-        telaPaused.SetActive(value);
+        ui_Itens["pause"].ToggleItem(value);
     }
 
     public void SetPuzzleDesc(string statusPuzzle, string descPuzzle, UI_Colors statusColor)
@@ -118,12 +169,6 @@ public class UI_Manager : MonoBehaviour
     {
         if(cardPuzzle.activeSelf)
             cardPuzzle.SetActive(false);
-    }
-
-    public void DeactivateNoteScreen()
-    {
-        if (telaNote.activeSelf)
-            telaNote.SetActive(false);
     }
 
     public void SetColorOnNumericTask(UI_Colors colorToSet)
