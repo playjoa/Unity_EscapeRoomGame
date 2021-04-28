@@ -23,10 +23,10 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 
 ### How to play: <br>
 
-<strong> WASD: To move </strong> <br>
-<strong> Mouse: Move Camera </strong> <br>
-<strong> Mouse Click: Interact </strong> <br>
-<strong> Mouse Hold: Grab itens </strong>  <br>
+<strong> WASD:</strong> To move  <br>
+<strong> Mouse: </strong> Move Camera <br>
+<strong> Mouse Click: </strong> Interact <br>
+<strong> Mouse Hold: </strong> Grab itens <br>
 
 ## Screemshots!
 ![1](Screenshots/Screenshot_1.png)
