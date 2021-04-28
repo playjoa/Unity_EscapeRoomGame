@@ -37,7 +37,7 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
 ## Screenshots!
 ![1](Screenshots/Screenshot_1.png)
 
-### Puzzle Solutions (SPOILERS)!
+# <strong> Puzzle Solutions (SPOILERS)! </strong>
 
 ## Basket Puzzle!
 
