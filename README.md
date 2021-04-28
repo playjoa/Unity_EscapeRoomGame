@@ -24,11 +24,7 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 Works on (PC Windows) <br>
 Available Languages: <strong> Portuguese </strong><br>
 
-<strong> If not cloned repository: </strong> <br>
 Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on your machine. Unzip and launch "Escape Room.exe". You can send the icon to your desktop if you want too. <br>
-
-<strong> If cloned repository: </strong> <br>
-You can just go on "BuildGame/WindowsBuild/Escape Room (Windows Build)" folder and launch "Escape Room.exe" from there. <br>
 
 ### How to play:
 
