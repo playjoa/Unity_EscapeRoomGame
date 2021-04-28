@@ -7,7 +7,7 @@ Development Status: <strong> Playable to end! </strong>
 
 ### Developement info:
 Started development in Unity <strong>2019.4</strong> using URP <strong> v10.4.0. </strong> <br>
-Baked lights and built with Unity <strong>2020.3</strong>
+Migrated to Unity <strong>2020.3.5f1</strong> due to a bug in that didn't let me bake lights with my video card! 
 
 ### Assets Used: <br>
 
