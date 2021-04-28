@@ -11,6 +11,13 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
     public bool isTaskComplete { get; private set; } = false;
 
     public static event Action<ITask> OnTaskComplete;
+    
+    private NumericTaskOperator refTaskOperator;
+
+    private void Start()
+    {
+        refTaskOperator = FindObjectOfType<NumericTaskOperator>();
+    }
 
     public void Interact()
     {
@@ -20,7 +27,7 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
         GameState.SwitchToInteracting();
 
         UI_Manager.Instance.ToggleNumericTaskScreen();
-        FindObjectOfType<NumericTaskOperator>().GetCurrentPassWord(this);
+        refTaskOperator.GetCurrentPassWord(this);
     }
 
     public void ActivateInteractionFeedback()
@@ -66,8 +73,6 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
 
         if (CurrentPasswordToInt() == numericPassword)
         {
-            SoundManager.PlaySoundInList("padconfirm", 1);
-
             isTaskComplete = true;
             OnTaskComplete(this);
         }

@@ -52,7 +52,7 @@ public class MuteSwitch : MonoBehaviour {
             if (isMusicMute)
                 musica.volume = 0;
             else
-                musica.volume = 0.45f;
+                musica.volume = 0.65f;
         }
         catch { Debug.Log("Soundtrack nao encontrada!"); }
     }
