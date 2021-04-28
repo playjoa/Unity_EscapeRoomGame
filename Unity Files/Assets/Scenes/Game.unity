@@ -33052,8 +33052,8 @@ Transform:
   - {fileID: 502831131}
   - {fileID: 2080185274}
   - {fileID: 1388632153}
-  - {fileID: 1843081758}
   - {fileID: 1445858054}
+  - {fileID: 1843081758}
   - {fileID: 369294519}
   - {fileID: 1017492039}
   m_Father: {fileID: 1814556501}
@@ -39900,7 +39900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: Nota
   descPuzzle: "Coisas para lembrar:\r\n\r\n- Manter as plantas regadas.\r\n- Buscar
-    as crian\xE7as da escola.\r\n- Alimentar as crian\xE7as.\r\n- Esconder o martelo
+    a crian\xE7a da escola.\r\n- Alimentar a crian\xE7a.\r\n- Esconder o martelo
     para a crian\xE7a n\xE3o pegar denovo.\r\n- Pagar conta de luz.\r\n- Assistir
     a s\xE9rie.\r\n- Pegar o celular da crian\xE7a do cofre."
 --- !u!1001 &1050771947
