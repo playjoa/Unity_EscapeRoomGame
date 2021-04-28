@@ -57,6 +57,7 @@
 		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.Playables.PlayableDirector" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbeGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.ReflectionProbe" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="AvailableGameEvents" preserve="nothing"/>
@@ -90,6 +91,7 @@
 		<type fullname="PickUpObject" preserve="nothing"/>
 		<type fullname="PlayerInteractions" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
+		<type fullname="PreventLeavingPlayableArea" preserve="nothing"/>
 		<type fullname="RotationPuzzle" preserve="nothing"/>
 		<type fullname="RotationTask" preserve="nothing"/>
 		<type fullname="SoundManager" preserve="nothing"/>
