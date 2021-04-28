@@ -6,7 +6,7 @@
 Development Status: <strong>Almost Playable to end!</strong>
 
 ### Developement info:
-Developed in Unity <strong>2020.3.5f1</strong> using URP <strong>v7.5.3.</strong> <br>
+Developed in Unity <strong>2020.3.5f1</strong> using URP <strong>v10.4.0.</strong> <br>
 
 ### Assets Used: <br>
 
