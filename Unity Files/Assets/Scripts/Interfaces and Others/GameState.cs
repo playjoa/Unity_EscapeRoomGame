@@ -60,6 +60,12 @@
         return false;
     }
 
+    public static void SwitchToCutscene()
+    {
+        UI_Manager.Instance.ToggleCutscene();
+        SetState(State.OnCutscene);
+    }
+
     public static void SwitchToGameOver()
     {
         SetState(State.Failed);
@@ -120,5 +126,6 @@ public enum State
     Interacting,
     Paused,
     Failed,
-    Complete
+    Complete,
+    OnCutscene
 }

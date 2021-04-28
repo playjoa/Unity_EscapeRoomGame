@@ -11,7 +11,7 @@ public class NumericPuzzle : MonoBehaviour, InteractableObject, IPuzzle
     private FeedbackPuzzleLights feedBackLights;
 
     [SerializeField]
-    private SafeVault safeToOpen;
+    private GenericAnimationToTrigger safeToOpen;
 
     [TextArea]
     public string descPuzzle;
@@ -57,7 +57,7 @@ public class NumericPuzzle : MonoBehaviour, InteractableObject, IPuzzle
         if (IsPuzzleComplete)
         {
             AvailableGameEvents.Instance.PuzzleComplete?.Invoke();
-            safeToOpen.OpenSafe();
+            safeToOpen.TriggerAnimation();
             Debug.Log("PUZZLE IS COMPLETE!!!");
         }
     }

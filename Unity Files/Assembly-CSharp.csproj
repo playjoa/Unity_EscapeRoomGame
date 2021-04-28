@@ -87,9 +87,9 @@
     <Compile Include="Assets\Scripts\Puzzles &amp; Tasks\Numeric Puzzle\NumericTask.cs" />
     <Compile Include="Assets\Scripts\Puzzles &amp; Tasks\Basket Puzzle\BasketPuzzle.cs" />
     <Compile Include="Assets\Scripts\Puzzles &amp; Tasks\Rotation Puzzle\RotationPuzzle.cs" />
-    <Compile Include="Assets\GameInitializer.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\GameInitializer.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
-    <Compile Include="Assets\Scripts\Interactable_Scripts\SafeVault.cs" />
+    <Compile Include="Assets\Scripts\Interactable_Scripts\GenericAnimationToTrigger.cs" />
     <Compile Include="Assets\Scripts\FeedbackLights_Scripts\FeedbackPuzzleLights.cs" />
     <Compile Include="Assets\Scripts\Other_Scripts\MouseLocker.cs" />
     <Compile Include="Assets\Scripts\SceneLoaders_Scripts\LoadSceneWithLoadingBar.cs" />
@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\UI_Scripts\NoteOperator.cs" />
     <Compile Include="Assets\Scripts\Puzzles &amp; Tasks\Basket Puzzle\BasketBallTask.cs" />
     <Compile Include="Assets\Scripts\GameEvents Script\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\TriggerCutscene.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\LeanTween\ReadMe.txt" />
@@ -745,6 +746,12 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

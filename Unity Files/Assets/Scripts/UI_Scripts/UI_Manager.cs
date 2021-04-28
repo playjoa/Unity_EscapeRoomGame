@@ -57,6 +57,7 @@ public class UI_Manager : MonoBehaviour
     {
         txtCurrentPassword.text = valueToSet;
     }
+
     public void ToggleTutorialScreen()
     {
         telaTutorial.SetActive(true);
@@ -79,6 +80,14 @@ public class UI_Manager : MonoBehaviour
         telaGameplay.SetActive(false);
         telaNote.SetActive(false);
         telaNumericTask.SetActive(true);
+    }
+
+    public void ToggleCutscene()
+    {
+        telaTutorial.SetActive(false);
+        telaGameplay.SetActive(false);
+        telaNumericTask.SetActive(false);
+        telaNote.SetActive(false);
     }
 
     public void ToggleGameOverScreen()

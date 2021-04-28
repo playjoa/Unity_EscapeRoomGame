@@ -55,6 +55,7 @@
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
+		<type fullname="UnityEngine.Playables.PlayableDirector" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbeGroup" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
@@ -73,6 +74,7 @@
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="GameOverScreenLoader" preserve="nothing"/>
 		<type fullname="GamePauser" preserve="nothing"/>
+		<type fullname="GenericAnimationToTrigger" preserve="nothing"/>
 		<type fullname="GoToScene" preserve="nothing"/>
 		<type fullname="InitialLoader" preserve="nothing"/>
 		<type fullname="InteractableAnimation" preserve="nothing"/>
@@ -90,13 +92,22 @@
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="RotationPuzzle" preserve="nothing"/>
 		<type fullname="RotationTask" preserve="nothing"/>
-		<type fullname="SafeVault" preserve="nothing"/>
 		<type fullname="SoundManager" preserve="nothing"/>
 		<type fullname="SoundtrackManager" preserve="nothing"/>
 		<type fullname="ToyGatherPuzzle" preserve="nothing"/>
 		<type fullname="ToyGatherTask" preserve="nothing"/>
+		<type fullname="TriggerCutscene" preserve="nothing"/>
 		<type fullname="TweenerAnimation" preserve="nothing"/>
 		<type fullname="UI_Manager" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Cinemachine">
+		<type fullname="Cinemachine.CinemachineBasicMultiChannelPerlin" preserve="nothing"/>
+		<type fullname="Cinemachine.CinemachineBrain" preserve="nothing"/>
+		<type fullname="Cinemachine.CinemachinePipeline" preserve="nothing"/>
+		<type fullname="Cinemachine.CinemachineVirtualCamera" preserve="nothing"/>
+		<type fullname="Cinemachine.NoiseSettings" preserve="nothing"/>
+		<type fullname="CinemachineShot" preserve="nothing"/>
+		<type fullname="CinemachineTrack" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerBitField" preserve="nothing"/>
@@ -138,6 +149,13 @@
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.XRSystemData" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.Timeline">
+		<type fullname="UnityEngine.Timeline.ActivationPlayableAsset" preserve="nothing"/>
+		<type fullname="UnityEngine.Timeline.ActivationTrack" preserve="nothing"/>
+		<type fullname="UnityEngine.Timeline.AnimationTrack" preserve="nothing"/>
+		<type fullname="UnityEngine.Timeline.MarkerTrack" preserve="nothing"/>
+		<type fullname="UnityEngine.Timeline.TimelineAsset" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>

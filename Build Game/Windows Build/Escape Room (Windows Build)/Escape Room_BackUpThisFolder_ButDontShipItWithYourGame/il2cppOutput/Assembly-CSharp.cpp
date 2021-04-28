@@ -238,6 +238,8 @@ struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319;
 struct GameOverScreenLoader_tD1E6BE1ADDE41407D8E589B9A02C2055EBB18AA0;
 // GamePauser
 struct GamePauser_t480E847B7332BEBBDC24EBE7D9F5DB920DB1F4CE;
+// GenericAnimationToTrigger
+struct GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151;
 // GoToScene
 struct GoToScene_tCD588916C0BBE0CC4749720822AED34CEA8E1E13;
 // System.IAsyncResult
@@ -5768,6 +5770,36 @@ public:
 };
 
 
+// GenericAnimationToTrigger
+struct GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// UnityEngine.Animator GenericAnimationToTrigger::targetAnimator
+	Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * ___targetAnimator_4;
+	// System.String GenericAnimationToTrigger::targetBoolToToggle
+	String_t* ___targetBoolToToggle_5;
+
+public:
+	inline static int32_t get_offset_of_targetAnimator_4() { return static_cast<int32_t>(offsetof(GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151, ___targetAnimator_4)); }
+	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * get_targetAnimator_4() const { return ___targetAnimator_4; }
+	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 ** get_address_of_targetAnimator_4() { return &___targetAnimator_4; }
+	inline void set_targetAnimator_4(Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * value)
+	{
+		___targetAnimator_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___targetAnimator_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_targetBoolToToggle_5() { return static_cast<int32_t>(offsetof(GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151, ___targetBoolToToggle_5)); }
+	inline String_t* get_targetBoolToToggle_5() const { return ___targetBoolToToggle_5; }
+	inline String_t** get_address_of_targetBoolToToggle_5() { return &___targetBoolToToggle_5; }
+	inline void set_targetBoolToToggle_5(String_t* value)
+	{
+		___targetBoolToToggle_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___targetBoolToToggle_5), (void*)value);
+	}
+};
+
+
 // GoToScene
 struct GoToScene_tCD588916C0BBE0CC4749720822AED34CEA8E1E13  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -8167,6 +8199,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameState_CanPause_mE35272743BF7D684D661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState_SwitchToPaused_m4BCF3FC0DE187DE0F003B1463C9814224F5EC5B2 (const RuntimeMethod* method);
 // System.Void GameState::ResumeGame()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState_ResumeGame_m22606F6A9238522E77B5DB688B1BCD0CAE40B48D (const RuntimeMethod* method);
+// System.Void UI_Manager::ToggleCutscene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UI_Manager_ToggleCutscene_m019AD86932FF0D0BA289A77B042628B4D2814750 (UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67 * __this, const RuntimeMethod* method);
 // System.Void GameState::SetState(State)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GameState_SetState_m6673BDC98FEE1BA240E2E566D96A162688D1B7F6_inline (int32_t ___newState0, const RuntimeMethod* method);
 // System.Void UI_Manager::ToggleGameOverScreen()
@@ -8181,6 +8215,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseLocker_LockMouse_m60C1B9505EDC4F21A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UI_Manager_ToggleTutorialScreen_m5759B184833EBD3C4A0C7852EDD06D33F9F1462A (UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67 * __this, const RuntimeMethod* method);
 // System.Void UI_Manager::ToggleGamePlayScreen()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UI_Manager_ToggleGamePlayScreen_m13D8BBD44FB8EDEAEA0A1A98F33C4E91D9272B08 (UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Animator::GetBool(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_GetBool_m69AFEA8176E7FB312C264773784D6D6B08A80C0A (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, const RuntimeMethod* method);
+// System.Boolean GenericAnimationToTrigger::get_CurrentStatusBoolAnimation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericAnimationToTrigger_get_CurrentStatusBoolAnimation_m85555D88978EC91D5BA6D6ABDAC07660BA095012 (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method);
+// System.Boolean GenericAnimationToTrigger::get_NewBoolAnimationValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericAnimationToTrigger_get_NewBoolAnimationValue_m95C222DC64EFC20A51FE4DD0D4FA7A81FF863DCD (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetBool_m34E2E9785A47A3AE94E804004425C333C36CCD43 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, bool ___value1, const RuntimeMethod* method);
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m5550E6368A6D0E37DACEDA3C5E4BA331836BC3C5 (int32_t ___sceneBuildIndex0, const RuntimeMethod* method);
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
@@ -8207,14 +8249,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableAnimation_ToggleAnimation_m8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UI_Manager_Set_TipText_m8E9A59D56C45A61EA7B0BB3ED302C94114E14621 (UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67 * __this, String_t* ___valueToSet0, const RuntimeMethod* method);
 // System.Boolean InteractableAnimation::get_NewBoolAnimationValue()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableAnimation_get_NewBoolAnimationValue_m14F11E09B563BD29746A22BA27C82D296DD51164 (InteractableAnimation_t8ACA821409FE805B844AB04DD984AF4E212BC1CC * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetBool_m34E2E9785A47A3AE94E804004425C333C36CCD43 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, bool ___value1, const RuntimeMethod* method);
 // System.Boolean UnityEngine.GameObject::get_activeSelf()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4865097C24FB29F3C31F5C30619AF242297F23EE (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * __this, const RuntimeMethod* method);
 // System.Boolean InteractableAnimation::get_CurrentStatusBoolAnimation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableAnimation_get_CurrentStatusBoolAnimation_m2A111662979312073752A51FD036464395565D0F (InteractableAnimation_t8ACA821409FE805B844AB04DD984AF4E212BC1CC * __this, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Animator::GetBool(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_GetBool_m69AFEA8176E7FB312C264773784D6D6B08A80C0A (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Boolean GameState::IsInteracting()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameState_IsInteracting_m61FC9B80C363DD86387D205F5986A9F8BCD1D75C (const RuntimeMethod* method);
 // System.Void GameState::SwitchToInteracting()
@@ -11150,6 +11188,28 @@ IL_000a:
 		return (bool)0;
 	}
 }
+// System.Void GameState::SwitchToCutscene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState_SwitchToCutscene_mE48F6F5EFFC495552E19B18B1D5002442C52C150 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameState_t220CA73AF42CC54408408696DBFFAB424F309FAE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// UI_Manager.Instance.ToggleCutscene();
+		UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67 * L_0 = ((UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67_StaticFields*)il2cpp_codegen_static_fields_for(UI_Manager_t251E4DF3C57244690ED26ED433547C6FAA19EC67_il2cpp_TypeInfo_var))->get_Instance_21();
+		NullCheck(L_0);
+		UI_Manager_ToggleCutscene_m019AD86932FF0D0BA289A77B042628B4D2814750(L_0, /*hidden argument*/NULL);
+		// SetState(State.OnCutscene);
+		IL2CPP_RUNTIME_CLASS_INIT(GameState_t220CA73AF42CC54408408696DBFFAB424F309FAE_il2cpp_TypeInfo_var);
+		GameState_SetState_m6673BDC98FEE1BA240E2E566D96A162688D1B7F6_inline(7, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
 // System.Void GameState::SwitchToGameOver()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState_SwitchToGameOver_m7C8C91131F817DA2EDA05A830A2FBCE04B7DFF3D (const RuntimeMethod* method)
 {
@@ -11326,6 +11386,106 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState_SwitchToPlayingFPS_m0F1B11DB0F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameState__cctor_m555A98DBA8E01F4099A2E2D12F74D2F3A9C85960 (const RuntimeMethod* method)
 {
 	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean GenericAnimationToTrigger::get_CurrentStatusBoolAnimation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericAnimationToTrigger_get_CurrentStatusBoolAnimation_m85555D88978EC91D5BA6D6ABDAC07660BA095012 (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method)
+{
+	{
+		// bool CurrentStatusBoolAnimation => targetAnimator.GetBool(targetBoolToToggle);
+		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_0 = __this->get_targetAnimator_4();
+		String_t* L_1 = __this->get_targetBoolToToggle_5();
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Animator_GetBool_m69AFEA8176E7FB312C264773784D6D6B08A80C0A(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Boolean GenericAnimationToTrigger::get_NewBoolAnimationValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericAnimationToTrigger_get_NewBoolAnimationValue_m95C222DC64EFC20A51FE4DD0D4FA7A81FF863DCD (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method)
+{
+	{
+		// bool NewBoolAnimationValue => !CurrentStatusBoolAnimation;
+		bool L_0;
+		L_0 = GenericAnimationToTrigger_get_CurrentStatusBoolAnimation_m85555D88978EC91D5BA6D6ABDAC07660BA095012(__this, /*hidden argument*/NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Void GenericAnimationToTrigger::TriggerAnimation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericAnimationToTrigger_TriggerAnimation_m6AED3F33867C8CD0698FBD379D9D6AB8711AB6D9 (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (targetAnimator == null)
+		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_0 = __this->get_targetAnimator_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// if (CurrentStatusBoolAnimation)
+		bool L_2;
+		L_2 = GenericAnimationToTrigger_get_CurrentStatusBoolAnimation_m85555D88978EC91D5BA6D6ABDAC07660BA095012(__this, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0018:
+	{
+		// targetAnimator.SetBool(targetBoolToToggle, NewBoolAnimationValue);
+		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_3 = __this->get_targetAnimator_4();
+		String_t* L_4 = __this->get_targetBoolToToggle_5();
+		bool L_5;
+		L_5 = GenericAnimationToTrigger_get_NewBoolAnimationValue_m95C222DC64EFC20A51FE4DD0D4FA7A81FF863DCD(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Animator_SetBool_m34E2E9785A47A3AE94E804004425C333C36CCD43(L_3, L_4, L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void GenericAnimationToTrigger::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericAnimationToTrigger__ctor_m139F0AF275074D283B83E0F0AA397C08C82B4B11 (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral48419E0AC7A3C471E758A3F53E24363D7898657B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private string targetBoolToToggle = "Open";
+		__this->set_targetBoolToToggle_5(_stringLiteral48419E0AC7A3C471E758A3F53E24363D7898657B);
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -172,6 +172,8 @@ struct GUIStyleState_tC89202668617B1D7884980314F293AD382B9AAD9;
 struct GameEvent_tD6B1DAFE5CFF83893F52042854E27ADA186FD038;
 // UnityEngine.GameObject
 struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319;
+// GenericAnimationToTrigger
+struct GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151;
 // System.IAsyncResult
 struct IAsyncResult_tC9F97BF36FCF122D29D3101D80642278297BF370;
 // System.Collections.IEnumerator
@@ -268,8 +270,6 @@ struct Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A;
 struct RotationPuzzle_t2566415576B86E28CE61F6449977BCC4B1A4F2CF;
 // RotationTask
 struct RotationTask_t296BDA31E8A91C4FF19124CE56CB16971A557991;
-// SafeVault
-struct SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA;
 // UnityEngine.Sprite
 struct Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9;
 // UnityEngine.SpriteRenderer
@@ -5305,6 +5305,36 @@ public:
 };
 
 
+// GenericAnimationToTrigger
+struct GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// UnityEngine.Animator GenericAnimationToTrigger::targetAnimator
+	Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * ___targetAnimator_4;
+	// System.String GenericAnimationToTrigger::targetBoolToToggle
+	String_t* ___targetBoolToToggle_5;
+
+public:
+	inline static int32_t get_offset_of_targetAnimator_4() { return static_cast<int32_t>(offsetof(GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151, ___targetAnimator_4)); }
+	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * get_targetAnimator_4() const { return ___targetAnimator_4; }
+	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 ** get_address_of_targetAnimator_4() { return &___targetAnimator_4; }
+	inline void set_targetAnimator_4(Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * value)
+	{
+		___targetAnimator_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___targetAnimator_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_targetBoolToToggle_5() { return static_cast<int32_t>(offsetof(GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151, ___targetBoolToToggle_5)); }
+	inline String_t* get_targetBoolToToggle_5() const { return ___targetBoolToToggle_5; }
+	inline String_t** get_address_of_targetBoolToToggle_5() { return &___targetBoolToToggle_5; }
+	inline void set_targetBoolToToggle_5(String_t* value)
+	{
+		___targetBoolToToggle_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___targetBoolToToggle_5), (void*)value);
+	}
+};
+
+
 // LeanTester
 struct LeanTester_t537C3FE41ED244252241E5B02F6B1BA6DA437297  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -5923,8 +5953,8 @@ public:
 	NumericTaskU5BU5D_t623BFCE41F1D89D936C486F30D002EBA0E4586EB* ___puzzleTasks_4;
 	// FeedbackPuzzleLights NumericPuzzle::feedBackLights
 	FeedbackPuzzleLights_t03A14C9A89548CF949ABD91F3B020E7D841958E8 * ___feedBackLights_5;
-	// SafeVault NumericPuzzle::safeToOpen
-	SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA * ___safeToOpen_6;
+	// GenericAnimationToTrigger NumericPuzzle::safeToOpen
+	GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * ___safeToOpen_6;
 	// System.String NumericPuzzle::descPuzzle
 	String_t* ___descPuzzle_7;
 	// PuzzleStats NumericPuzzle::puzzleStats
@@ -5950,9 +5980,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_safeToOpen_6() { return static_cast<int32_t>(offsetof(NumericPuzzle_t7E533E6FAE9ECA3BC8D8E4C5F8D6C9C8FA2055AC, ___safeToOpen_6)); }
-	inline SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA * get_safeToOpen_6() const { return ___safeToOpen_6; }
-	inline SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA ** get_address_of_safeToOpen_6() { return &___safeToOpen_6; }
-	inline void set_safeToOpen_6(SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA * value)
+	inline GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * get_safeToOpen_6() const { return ___safeToOpen_6; }
+	inline GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 ** get_address_of_safeToOpen_6() { return &___safeToOpen_6; }
+	inline void set_safeToOpen_6(GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * value)
 	{
 		___safeToOpen_6 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___safeToOpen_6), (void*)value);
@@ -6462,36 +6492,6 @@ public:
 	{
 		___OnTaskChanged_8 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___OnTaskChanged_8), (void*)value);
-	}
-};
-
-
-// SafeVault
-struct SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
-{
-public:
-	// UnityEngine.Animator SafeVault::targetAnimator
-	Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * ___targetAnimator_4;
-	// System.String SafeVault::targetBoolToToggle
-	String_t* ___targetBoolToToggle_5;
-
-public:
-	inline static int32_t get_offset_of_targetAnimator_4() { return static_cast<int32_t>(offsetof(SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA, ___targetAnimator_4)); }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * get_targetAnimator_4() const { return ___targetAnimator_4; }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 ** get_address_of_targetAnimator_4() { return &___targetAnimator_4; }
-	inline void set_targetAnimator_4(Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * value)
-	{
-		___targetAnimator_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___targetAnimator_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_targetBoolToToggle_5() { return static_cast<int32_t>(offsetof(SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA, ___targetBoolToToggle_5)); }
-	inline String_t* get_targetBoolToToggle_5() const { return ___targetBoolToToggle_5; }
-	inline String_t** get_address_of_targetBoolToToggle_5() { return &___targetBoolToToggle_5; }
-	inline void set_targetBoolToToggle_5(String_t* value)
-	{
-		___targetBoolToToggle_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___targetBoolToToggle_5), (void*)value);
 	}
 };
 
@@ -8705,8 +8705,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UI_Manager_DeactivatePuzzleCard_m8E57509
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameEvent_tD6B1DAFE5CFF83893F52042854E27ADA186FD038 * AvailableGameEvents_get_PuzzleComplete_m5954C43AA8B172B4C682E4AB3461163EE8C5C78F_inline (AvailableGameEvents_tF07ECD95813AF10B3F2920A9A63CA80F32AC6E1F * __this, const RuntimeMethod* method);
 // System.Void GameEvent::Invoke()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameEvent_Invoke_mD6240CC71351D7463E7DFFBB9F68B18E7DCECFEA (GameEvent_tD6B1DAFE5CFF83893F52042854E27ADA186FD038 * __this, const RuntimeMethod* method);
-// System.Void SafeVault::OpenSafe()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeVault_OpenSafe_m6AFD8F02DE6DAEC181ECBF1A81C5EAF7B5E2E128 (SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA * __this, const RuntimeMethod* method);
+// System.Void GenericAnimationToTrigger::TriggerAnimation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericAnimationToTrigger_TriggerAnimation_m6AED3F33867C8CD0698FBD379D9D6AB8711AB6D9 (GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * __this, const RuntimeMethod* method);
 // System.Int32 PuzzleStats::NumTasksComplete()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PuzzleStats_NumTasksComplete_m773B2CBFE3B74A7AA11DA70629583F44C319C31F (PuzzleStats_t1C6B7230BC630C23AFA3A157C602108DCCEFFD8B * __this, const RuntimeMethod* method);
 // System.Void FeedbackPuzzleLights::ToggleLights(System.Int32)
@@ -28491,10 +28491,10 @@ IL_0018:
 
 IL_001d:
 	{
-		// safeToOpen.OpenSafe();
-		SafeVault_tE6EA2D10643196BBB043E0F5D060209C3AFCF9AA * L_4 = __this->get_safeToOpen_6();
+		// safeToOpen.TriggerAnimation();
+		GenericAnimationToTrigger_tAFB959A3F4B55A8405A1F5CA6136FD72F4F2C151 * L_4 = __this->get_safeToOpen_6();
 		NullCheck(L_4);
-		SafeVault_OpenSafe_m6AFD8F02DE6DAEC181ECBF1A81C5EAF7B5E2E128(L_4, /*hidden argument*/NULL);
+		GenericAnimationToTrigger_TriggerAnimation_m6AED3F33867C8CD0698FBD379D9D6AB8711AB6D9(L_4, /*hidden argument*/NULL);
 		// Debug.Log("PUZZLE IS COMPLETE!!!");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral88F3A660C31436A80576A84684F76BFCEDA1051C, /*hidden argument*/NULL);

@@ -672,6 +672,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "PlayableDirector",
+            "fullManagedTypeName": "UnityEngine.Playables.PlayableDirector",
+            "moduleName": "Director",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "LightProbeGroup",
             "fullManagedTypeName": "UnityEngine.LightProbeGroup",
             "moduleName": "Core",
@@ -781,6 +790,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "GamePauser",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GenericAnimationToTrigger",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -906,13 +922,6 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "SafeVault",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "SoundManager",
             "moduleName": "",
             "usedInScenes": []
@@ -941,6 +950,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "TriggerCutscene",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "TweenerAnimation",
             "moduleName": "",
             "usedInScenes": []
@@ -949,6 +965,55 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UI_Manager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Cinemachine.CinemachineBasicMultiChannelPerlin",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Cinemachine.CinemachineBrain",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Cinemachine.CinemachinePipeline",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Cinemachine.CinemachineVirtualCamera",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Cinemachine.NoiseSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "CinemachineShot",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Cinemachine.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "CinemachineTrack",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1208,6 +1273,41 @@
             "managedAssemblyName": "Unity.RenderPipelines.Universal.Runtime.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Rendering.Universal.XRSystemData",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Timeline.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Timeline.ActivationPlayableAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Timeline.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Timeline.ActivationTrack",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Timeline.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Timeline.AnimationTrack",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Timeline.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Timeline.MarkerTrack",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Timeline.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Timeline.TimelineAsset",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SafeVault : MonoBehaviour
+public class GenericAnimationToTrigger : MonoBehaviour
 {
     [SerializeField]
     private Animator targetAnimator;
@@ -14,7 +14,7 @@ public class SafeVault : MonoBehaviour
 
     bool NewBoolAnimationValue => !CurrentStatusBoolAnimation;
 
-    public void OpenSafe()
+    public void TriggerAnimation()
     {
         if (targetAnimator == null)
             return;
