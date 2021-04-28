@@ -102,7 +102,7 @@ Code: 1925
 
 ## Toy Puzzle!
 
-- There are 6 toys scattered around the house.
+- There are 6 toys scattered around the house, find them and put them on the table.
 - Some notes will indicate what toys to look for.
 - Complete numberpad puzzle to unlock final toy.
 
