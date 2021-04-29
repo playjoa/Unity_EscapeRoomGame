@@ -47,7 +47,7 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
   <br>.<br>
   <br>.<br>
   <br>.<br>
-  <br><br>
+  <br>.<br>
 </p>
 
 
