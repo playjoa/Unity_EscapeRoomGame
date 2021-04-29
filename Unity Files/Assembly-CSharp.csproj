@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\FeedbackLights_Scripts\FeedbackPuzzleLights.cs" />
     <Compile Include="Assets\Scripts\Other_Scripts\MouseLocker.cs" />
     <Compile Include="Assets\Scripts\SceneLoaders_Scripts\LoadSceneWithLoadingBar.cs" />
+    <Compile Include="Assets\Scripts\Other_Scripts\PreventLeavingPlayableArea.cs" />
     <Compile Include="Assets\Scripts\Audio_Scripts\MuteSwitch.cs" />
     <Compile Include="Assets\Scripts\Twean_Scripts\LeanTweanerPopUp.cs" />
     <Compile Include="Assets\Scripts\Interfaces and Others\InteractableObject.cs" />
@@ -112,7 +113,6 @@
     <Compile Include="Assets\Scripts\UI_Scripts\NoteOperator.cs" />
     <Compile Include="Assets\Scripts\Puzzles&amp;Tasks_Scritps\Basket Puzzle\BasketBallTask.cs" />
     <Compile Include="Assets\Scripts\GameEvents_Script\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\Other_Scripts\PreventLeavingPlayableArea.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\LeanTween\ReadMe.txt" />

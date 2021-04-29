@@ -1767,6 +1767,17 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8634263623362045753, guid: 2da5f08995065854da0e73457a96a95e,
+        type: 3}
+      propertyPath: m_Text
+      value: "- Existem puzzles espalhados pela casa, eles estar\xE3o marcados por
+        l\xE2mpadas vermelhas.\n- Cada l\xE2mpada representa uma task a ser feita.
+        Complete todas para concluir o puzzle.\n- Procure por pistas  pela casa,
+        elas ir\xE3o ajudar a realizar as tasks.\n- Ap\xF3s completar todos os puzzles
+        a porta ir\xE1 se abrir e voc\xEA poder\xE1 sair da casa.\n- Voc\xEA ter\xE1
+        15 minutos para escapar.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBoa
+        Sorte!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2da5f08995065854da0e73457a96a95e, type: 3}
 --- !u!224 &42910222 stripped
@@ -21100,10 +21111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteName: Nota
-  descPuzzle: "Localiza\xE7\xE3o de livros:\n\nLivros de f\xEDsica: Quarto do computador\nLivros
-    matem\xE1tica: Quarto computador\nLivros sobre musica: Em cima do piano\nSaga
-    Harry Potter: Lareira\nSaga Senhor dos An\xE9is: Estante sala de jantar\nCr\xF4nicas
-    de N\xE1rnia: Estante sala de jantar\n"
+  descPuzzle: "Localiza\xE7\xE3o de livros:\r\n\r\nLivros de f\xEDsica: Quarto do
+    computador\r\nLivros matem\xE1tica: Quarto do computador\r\nLivros sobre m\xFAsica:
+    Em cima do piano\r\nSaga Harry Potter: Em cima da lareira\r\nSaga Senhor dos
+    An\xE9is: Estante da sala de jantar\r\nCr\xF4nicas de N\xE1rnia: Estante da sala
+    de jantar"
 --- !u!1001 &529449206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29426,7 +29438,7 @@ Canvas:
   m_GameObject: {fileID: 754475005}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 634642834}
   m_PlaneDistance: 0.011
   m_PixelPerfect: 0
@@ -46120,7 +46132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: Nota
   descPuzzle: "Uma pena que quando fomos na praia choveu bastante! Talvez seja por
-    isso que a crian\xE7a n\xE3o goste de brincar de areia e prefere os blocos para
+    isso que a crian\xE7a n\xE3o gosta de brincar na areia e prefere os blocos para
     construir casinhas!"
 --- !u!1001 &1224545795
 PrefabInstance:
@@ -55335,7 +55347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: Nota
   descPuzzle: "Esse dia de ver\xE3o foi muito bom! Estava com a mira em dia! Conseguia
-    acertar tanto o frisbee quanto a bola de futebol americano na cesta!"
+    acertar tanto o frisbee quanto a bola de futebol americano de longe na cesta!"
 --- !u!1 &1441634756
 GameObject:
   m_ObjectHideFlags: 0
