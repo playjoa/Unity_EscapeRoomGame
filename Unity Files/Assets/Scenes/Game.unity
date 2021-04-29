@@ -7600,7 +7600,7 @@ MonoBehaviour:
   targetCollider: {fileID: 1241252772}
   feedBackLights: {fileID: 1603778253}
   descPuzzle: "Crian\xE7as s\xE3o muito bagunceiras, sempre espalham os seus brinquedos
-    pela casa!"
+    pela casa! Junte essaa babun\xE7a!"
 --- !u!1 &171694489
 GameObject:
   m_ObjectHideFlags: 0
@@ -19677,7 +19677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Trenzinho
+  objectName: Trenzinho de brinquedo
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &483470332
 MonoBehaviour:
@@ -40878,7 +40878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Trenzinho
+  objectName: Trenzinho de brinquedo
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1081976179
 Rigidbody:
@@ -51240,7 +51240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: Nota Secreta
   descPuzzle: "Minha codifica\xE7\xE3o secreta:\n\n1 = !\n2 = @ \n3 = # \n4 = $\n5
-    = 5\n6 = ~\n7 = &\n8 = * \n9 = (\n0 = )\n"
+    = %\n6 = ~\n7 = &\n8 = * \n9 = (\n0 = )\n\nLembrar de deixar objetos que lembrem
+    a senha perto do teclado num\xE9rico!"
 --- !u!1001 &1330392282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58637,7 +58638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Telhado
+  objectName: Telhado de brinquedo
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1496110630
 MonoBehaviour:
@@ -66457,7 +66458,7 @@ MonoBehaviour:
   feedBackLights: {fileID: 5599351383843150149}
   safeToOpen: {fileID: 1230595850445139}
   descPuzzle: "Existem 4 teclados de seguran\xE7a espalhadas pela casa! E este cofre
-    n\xE3o ir\xE1 se abrir sozinho!"
+    n\xE3o ir\xE1 se abrir sozinho! (Obs: Datas s\xE3o \xF3timas senhas)"
 --- !u!1001 &1658209218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87851,7 +87852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217611984493935}
   m_LocalRotation: {x: 0, y: 0.75585335, z: 0, w: 0.6547409}
-  m_LocalPosition: {x: -15.068, y: 1.024, z: -2.152}
+  m_LocalPosition: {x: -15.068, y: 0.739, z: -2.152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 969598660}

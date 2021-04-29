@@ -12,12 +12,6 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
 
     public static event Action<ITask> OnTaskComplete;
     
-    private NumericTaskOperator refTaskOperator;
-
-    private void Start()
-    {
-        refTaskOperator = FindObjectOfType<NumericTaskOperator>();
-    }
 
     public void Interact()
     {
@@ -27,7 +21,8 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
         GameState.SwitchToInteracting();
 
         UI_Manager.Instance.ToggleNumericTaskScreen();
-        refTaskOperator.GetCurrentPassWord(this);
+
+        FindObjectOfType<NumericTaskOperator>().GetCurrentPassWord(this);
     }
 
     public void ActivateInteractionFeedback()
