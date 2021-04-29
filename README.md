@@ -74,11 +74,11 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
 
 ## Computer Puzzle!
 
-- In this puzzle you have to make the cameras look away!
+- In this puzzle you have to make the cameras look away from the computer!
 
 ![1](Screenshots/ComputerPuzzle/0.png)
 
-### First camera is on the side of the computer!
+### First camera is beside of the computer!
 ![1](Screenshots/ComputerPuzzle/1.png)
 
 ### Second camera back of the room!
@@ -87,27 +87,27 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
 ### Third camera on the hallway!
 ![1](Screenshots/ComputerPuzzle/3.png)
 
-## NumberPad Puzzle!
+## Numberpad Puzzle!
 
 - There are 4 hidden numberpads. They each correspond to a date that can be found on a note!
-- Each date refers to a near object of the number pad.
-- After completing this puzzle the safe opens and you can grap one of the toys for the other puzzle.
+- Each date refers to a near object of the numberpad.
+- After completing this puzzle the safe opens and you can grab one of the toys for the other puzzle.
 
 ![1](Screenshots/NumberPuzzle/0.png)
 
-### Number pad behind Harry Potter books on the fireplace
+### Numberpad behind Harry Potter books on the fireplace
 ![1](Screenshots/NumberPuzzle/1.png)
 Code: 1997
 
-### Number pad behind the toaster in the kitchen!
+### Numberpad behind the toaster in the kitchen!
 ![1](Screenshots/NumberPuzzle/2.png)
 Code: 1913
 
-### Number pad behind the radio in the parents bedroom!
+### Numberpad behind the radio in the parents bedroom!
 ![1](Screenshots/NumberPuzzle/3.png)
 Code: 1899
 
-### Number pad on the side of the TV!
+### Numberpad on the side of the TV!
 ![1](Screenshots/NumberPuzzle/4.png)
 Code: 1925
 
