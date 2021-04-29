@@ -7600,7 +7600,7 @@ MonoBehaviour:
   targetCollider: {fileID: 1241252772}
   feedBackLights: {fileID: 1603778253}
   descPuzzle: "Crian\xE7as s\xE3o muito bagunceiras, sempre espalham os seus brinquedos
-    pela casa! Junte essaa babun\xE7a!"
+    pela casa! Arrume essa babun\xE7a!"
 --- !u!1 &171694489
 GameObject:
   m_ObjectHideFlags: 0
@@ -21112,7 +21112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: Nota
   descPuzzle: "Localiza\xE7\xE3o de livros:\r\n\r\nLivros de f\xEDsica: Quarto do
-    computador\r\nLivros matem\xE1tica: Quarto do computador\r\nLivros sobre m\xFAsica:
+    computador\r\nLivros de matem\xE1tica: Quarto do computador\r\nLivros sobre m\xFAsica:
     Em cima do piano\r\nSaga Harry Potter: Em cima da lareira\r\nSaga Senhor dos
     An\xE9is: Estante da sala de jantar\r\nCr\xF4nicas de N\xE1rnia: Estante da sala
     de jantar"
@@ -22356,7 +22356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteName: Nota
-  descPuzzle: "Essa porta s\xF3 ir\xE1 se abrir ap\xF3s concluir todos os puzzles
+  descPuzzle: "Essa porta s\xF3 ir\xE1 abrir ap\xF3s concluir todos os puzzles espalhados
     pela casa."
 --- !u!1001 &571146628
 PrefabInstance:
@@ -25367,7 +25367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteName: Nota
-  descPuzzle: As vezes eu gosto de usar um hamburguer como bola!
+  descPuzzle: "\xC0s vezes eu gosto de usar um hamburguer como bola!"
 --- !u!1001 &643285299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39913,7 +39913,7 @@ MonoBehaviour:
   noteName: Nota
   descPuzzle: "Coisas para lembrar:\r\n\r\n- Manter as plantas regadas.\r\n- Buscar
     a crian\xE7a da escola.\r\n- Alimentar a crian\xE7a.\r\n- Esconder o martelo
-    para a crian\xE7a n\xE3o pegar denovo.\r\n- Pagar conta de luz.\r\n- Assistir
+    para a crian\xE7a n\xE3o pegar de novo.\r\n- Pagar conta de luz.\r\n- Assistir
     a s\xE9rie.\r\n- Pegar o celular da crian\xE7a do cofre."
 --- !u!1001 &1050771947
 PrefabInstance:
@@ -51213,7 +51213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteName: Nota Secreta
-  descPuzzle: Lareiras as vezes podem esconder coisas muito interessantes!
+  descPuzzle: Lareiras podem esconder coisas muito interessantes!
 --- !u!1 &1329861198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 119182, guid: 9e7b9a5d5dab450459315a75ec16fa02,
@@ -66459,8 +66459,8 @@ MonoBehaviour:
   - {fileID: 1448069657}
   feedBackLights: {fileID: 5599351383843150149}
   safeToOpen: {fileID: 1230595850445139}
-  descPuzzle: "Existem 4 teclados de seguran\xE7a espalhadas pela casa! E este cofre
-    n\xE3o ir\xE1 se abrir sozinho! (Obs: Datas s\xE3o \xF3timas senhas)"
+  descPuzzle: "Existem 4 teclados de seguran\xE7a espalhados pela casa! Este cofre
+    n\xE3o ir\xE1 abrir sozinho! (Obs: Datas s\xE3o \xF3timas senhas)"
 --- !u!1001 &1658209218
 PrefabInstance:
   m_ObjectHideFlags: 0
