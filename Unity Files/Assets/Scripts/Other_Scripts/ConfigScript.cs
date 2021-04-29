@@ -52,7 +52,7 @@ public class ConfigScript : MonoBehaviour
         if (res.height != Screen.currentResolution.height)
             return false;
 
-        if (res.refreshRate != Application.targetFrameRate)
+        if (res.refreshRate != Screen.currentResolution.refreshRate)
             return false;
 
         return true;

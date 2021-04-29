@@ -21446,7 +21446,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 941.45447, y: 714.8855}
+  m_SizeDelta: {x: 1044.0106, y: 858.9525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539010971
 MonoBehaviour:
@@ -62052,7 +62052,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 2dd02621d23f24d41ac888fcd42e886b, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -62061,7 +62061,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-'
+  m_Text: "Minha codifica\xE7\xE3o secreta:\n\n1 = !\n2 = @ \n3 = # \n4 = $\n5 =
+    %\n6 = ~\n7 = &\n8 = * \n9 = (\n0 = )\n\nLembrar de deixar objetos que lembrem
+    a senha perto do teclado num\xE9rico!"
 --- !u!222 &1567386432
 CanvasRenderer:
   m_ObjectHideFlags: 0

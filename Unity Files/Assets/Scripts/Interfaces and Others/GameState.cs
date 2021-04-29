@@ -68,6 +68,7 @@
 
     public static void SwitchToGameOver()
     {
+        SetState(State.Failed);
         UI_Manager.Instance.ToggleGameOverScreen();
     }
 
@@ -124,5 +125,6 @@ public enum State
     Interacting,
     Paused,
     Complete,
+    Failed,
     OnCutscene
 }

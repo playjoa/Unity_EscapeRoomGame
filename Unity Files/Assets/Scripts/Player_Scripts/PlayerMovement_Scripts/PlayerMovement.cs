@@ -103,7 +103,6 @@ public class PlayerMovement : MonoBehaviour
                                 playerTransform.forward * PlayerInputs.MoveInputs().y;
 
         baseDirection *= playerHorizontalSpeed * Time.deltaTime;
-
         return baseDirection;
     }
 }
