@@ -18,7 +18,39 @@ public static class Translate
     private static Language[] availableLanguages;
 
     public static string CurrentLanguage => currentLanguage.ToString();
-    
+
+    static void InitializeSystem()
+    {
+        if (languageDictionary != null)
+            return;
+
+        availableLanguages = Resources.LoadAll<Language>(languagesFolderInResources);
+
+        CreateDictionary();
+        GetCurrentLanguage();
+    }
+
+    static void CreateDictionary()
+    {
+        languageDictionary = new Dictionary<SystemLanguage, Language>();
+
+        foreach (Language currentLanguage in availableLanguages)
+        {
+            currentLanguage.SetUpLanguage();
+            languageDictionary.Add(currentLanguage.KeyLanguage, currentLanguage);
+        }
+    }
+
+    static void GetCurrentLanguage()
+    {
+        SystemLanguage currentSystemLanguage = CurrentSystemLanguage();
+
+        if (!languageDictionary.ContainsKey(currentSystemLanguage))
+            currentLanguage = defaultLanguage;
+
+        currentLanguage = currentSystemLanguage;
+    }
+
     public static string GetTranslatedText(string keyText)
     {
         InitializeSystem();
@@ -27,9 +59,6 @@ public static class Translate
             return string.Empty;
 
         keyText = keyText.ToLower();
-
-        if (!languageDictionary.ContainsKey(currentLanguage))
-            return GetDefaultLanguageText(keyText);
 
         string translatedText = languageDictionary[currentLanguage].ReturnTranslatedText(keyText);
 
@@ -62,38 +91,6 @@ public static class Translate
         InitializeSystem();
 
         return new List<SystemLanguage>(languageDictionary.Keys);
-    }
-
-    static void InitializeSystem()
-    {
-        if (languageDictionary != null)
-            return;
-
-        availableLanguages = Resources.LoadAll<Language>(languagesFolderInResources);
-
-        CreateDictionary();
-        GetCurrentLanguage();
-    }
-
-    static void CreateDictionary()
-    {
-        languageDictionary = new Dictionary<SystemLanguage, Language>();
-
-        foreach (Language currentLanguage in availableLanguages)
-        {
-            currentLanguage.SetUpLanguage();
-            languageDictionary.Add(currentLanguage.KeyLanguage, currentLanguage);
-        }
-    }
-
-    static void GetCurrentLanguage()
-    {
-        SystemLanguage currentSystemLanguage = CurrentSystemLanguage();
-
-        if (!languageDictionary.ContainsKey(currentSystemLanguage))
-            currentLanguage = defaultLanguage;
-
-        currentLanguage = currentSystemLanguage;
     }
 
     static void RegisterLanguageNewMemory(SystemLanguage newLanguage) 
