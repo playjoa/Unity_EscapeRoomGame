@@ -11,7 +11,6 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
     public bool isTaskComplete { get; private set; } = false;
 
     public static event Action<ITask> OnTaskComplete;
-    
 
     public void Interact()
     {
@@ -27,7 +26,7 @@ public class NumericTask : MonoBehaviour, InteractableObject, ITask
 
     public void ActivateInteractionFeedback()
     {
-        UI_Manager.Instance.Set_TipText("Digite a senha");
+        UI_Manager.Instance.Set_TipText("password");
     }
 
     public void DeactivateInteractionFeedback()

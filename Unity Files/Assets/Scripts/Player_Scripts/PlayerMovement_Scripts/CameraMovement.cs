@@ -14,6 +14,37 @@ public class CameraMovement : MonoBehaviour
 
     private float verticalRotation = 0;
 
+    private void OnEnable()
+    {
+        ConfigPlayerLookSensitivity.OnSensChanged += LoadPlayerSensitivity;
+    }
+
+    private void OnDisable()
+    {
+        ConfigPlayerLookSensitivity.OnSensChanged -= LoadPlayerSensitivity;
+    }
+
+    private void Awake()
+    {
+        CheckForSavedSens();
+        LoadPlayerSensitivity();
+    }
+
+    void LoadPlayerSensitivity()
+    {
+        mouseSensX = PlayerPrefs.GetFloat("sensX");
+        mouseSensY = PlayerPrefs.GetFloat("sensY");
+    }
+
+    void CheckForSavedSens()
+    {
+        if (!PlayerPrefs.HasKey("sensX") && !PlayerPrefs.HasKey("sensY"))
+        {
+            PlayerPrefs.SetFloat("sensX", mouseSensX);
+            PlayerPrefs.SetFloat("sensY", mouseSensY);
+        }
+    }
+
     private void Update()
     {
         if (!GameState.IsPlayingFPS())

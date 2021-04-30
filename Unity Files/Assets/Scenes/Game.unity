@@ -2169,7 +2169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Pote
+  objectName: bowl
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &51430035
 Rigidbody:
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &52101473
 Rigidbody:
@@ -3272,6 +3272,102 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 67779859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &69253174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69253175}
+  - component: {fileID: 69253177}
+  - component: {fileID: 69253176}
+  - component: {fileID: 69253178}
+  m_Layer: 5
+  m_Name: txtVerticalMovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &69253175
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69253174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 535280051}
+  m_Father: {fileID: 401122614}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -447, y: 193.27228}
+  m_SizeDelta: {x: 437.7017, y: 76.6135}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &69253176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69253174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.88235295, g: 0.69411767, b: 0.17254902, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2dd02621d23f24d41ac888fcd42e886b, type: 3}
+    m_FontSize: 97
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 135
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Vertical Sens.:'
+--- !u!222 &69253177
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69253174}
+  m_CullTransparentMesh: 1
+--- !u!114 &69253178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69253174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &70355215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3838,7 +3934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &80250225
 Rigidbody:
@@ -6175,6 +6271,102 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 127003919}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &132861265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 132861266}
+  - component: {fileID: 132861268}
+  - component: {fileID: 132861267}
+  - component: {fileID: 132861269}
+  m_Layer: 5
+  m_Name: txtHorizontalSens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &132861266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132861265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1186181101}
+  m_Father: {fileID: 401122614}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 447, y: 196}
+  m_SizeDelta: {x: 437.7017, y: 82.069}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &132861267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132861265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.88235295, g: 0.69411767, b: 0.17254902, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2dd02621d23f24d41ac888fcd42e886b, type: 3}
+    m_FontSize: 97
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 135
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Horizontal Sens.:'
+--- !u!222 &132861268
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132861265}
+  m_CullTransparentMesh: 1
+--- !u!114 &132861269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132861265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &137572904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7599,8 +7791,7 @@ MonoBehaviour:
   - {fileID: 917314151}
   targetCollider: {fileID: 1241252772}
   feedBackLights: {fileID: 1603778253}
-  descPuzzle: "Crian\xE7as s\xE3o muito bagunceiras, sempre espalham os seus brinquedos
-    pela casa! Arrume essa babun\xE7a!"
+  descPuzzle: desctoygather
 --- !u!1 &171694489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9025,7 +9216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &231497682
 Rigidbody:
@@ -9287,7 +9478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &236858252
 Rigidbody:
@@ -9415,7 +9606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &236960175
 Rigidbody:
@@ -15229,6 +15420,7 @@ GameObject:
   - component: {fileID: 370201415}
   - component: {fileID: 370201417}
   - component: {fileID: 370201416}
+  - component: {fileID: 370201418}
   m_Layer: 5
   m_Name: Tela Pause
   m_TagString: Untagged
@@ -15294,6 +15486,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370201414}
   m_CullTransparentMesh: 1
+--- !u!114 &370201418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370201414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddd84d5238c8804c852246f9b5bb155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slVertical: {fileID: 535280052}
+  slHorizontal: {fileID: 1186181102}
 --- !u!1001 &371011772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16511,6 +16717,9 @@ RectTransform:
   - {fileID: 647137001}
   - {fileID: 1410838086}
   - {fileID: 1900845444}
+  - {fileID: 1310446829}
+  - {fileID: 69253175}
+  - {fileID: 132861266}
   m_Father: {fileID: 370201415}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16893,7 +17102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &407605757
 Rigidbody:
@@ -18418,7 +18627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &442748689
 Rigidbody:
@@ -19677,7 +19886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Trenzinho de brinquedo
+  objectName: train
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &483470332
 MonoBehaviour:
@@ -20198,6 +20407,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491350159}
   m_CullTransparentMesh: 0
+--- !u!1 &493413109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493413110}
+  - component: {fileID: 493413112}
+  - component: {fileID: 493413111}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &493413110
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493413109}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 535280051}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &493413111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493413109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.09803922, g: 0.16470589, b: 0.3372549, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &493413112
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493413109}
+  m_CullTransparentMesh: 1
 --- !u!1001 &498415119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21110,12 +21394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Localiza\xE7\xE3o de livros:\r\n\r\nLivros de f\xEDsica: Quarto do
-    computador\r\nLivros de matem\xE1tica: Quarto do computador\r\nLivros sobre m\xFAsica:
-    Em cima do piano\r\nSaga Harry Potter: Em cima da lareira\r\nSaga Senhor dos
-    An\xE9is: Estante da sala de jantar\r\nCr\xF4nicas de N\xE1rnia: Estante da sala
-    de jantar"
+  noteName: note
+  descPuzzle: booksnote
 --- !u!1001 &529449206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21231,7 +21511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &530576883
 Rigidbody:
@@ -21318,6 +21598,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 773941123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &535280050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535280051}
+  - component: {fileID: 535280052}
+  m_Layer: 5
+  m_Name: slVerticalSens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &535280051
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535280050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 493413110}
+  - {fileID: 647709681}
+  - {fileID: 670557583}
+  m_Father: {fileID: 69253175}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -47}
+  m_SizeDelta: {x: 370.873, y: 76.1879}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &535280052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535280050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 628743212}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 25
+  m_MaxValue: 150
+  m_WholeNumbers: 0
+  m_Value: 94
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 370201418}
+        m_TargetAssemblyTypeName: ConfigPlayerLookSensitivity, Assembly-CSharp
+        m_MethodName: ChangeYSens
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &536069914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 536069914, guid: 7d39f4a905c400f42b4ea4c33b998362,
@@ -22355,9 +22737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Essa porta s\xF3 ir\xE1 abrir ap\xF3s concluir todos os puzzles espalhados
-    pela casa."
+  noteName: note
+  descPuzzle: puzzlenote
 --- !u!1001 &571146628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22531,7 +22912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cerveja
+  objectName: beer
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &572857497
 Rigidbody:
@@ -23095,7 +23476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &590020104
 Rigidbody:
@@ -24078,7 +24459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Salsicha
+  objectName: sausage
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &613453488
 Rigidbody:
@@ -24458,6 +24839,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1490398655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &628743211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628743212}
+  - component: {fileID: 628743214}
+  - component: {fileID: 628743213}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &628743212
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628743211}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 647709681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.552, y: 1}
+  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_SizeDelta: {x: 4.9999, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628743213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628743211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.5921569, b: 0.9019608, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &628743214
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628743211}
+  m_CullTransparentMesh: 1
 --- !u!1001 &630365977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25366,8 +25822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "\xC0s vezes eu gosto de usar um hamburguer como bola!"
+  noteName: note
+  descPuzzle: basketnote
 --- !u!1001 &643285299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25726,6 +26182,7 @@ GameObject:
   - component: {fileID: 647137004}
   - component: {fileID: 647137003}
   - component: {fileID: 647137002}
+  - component: {fileID: 647137007}
   m_Layer: 5
   m_Name: btnContinuar
   m_TagString: Untagged
@@ -25749,7 +26206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 94}
+  m_AnchoredPosition: {x: 0, y: 195}
   m_SizeDelta: {x: 488.5244, y: 113.84271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647137002
@@ -25865,6 +26322,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647137000}
   m_CullTransparentMesh: 1
+--- !u!114 &647137007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647137000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490e14df6bce20e4eaa0b276bce7acbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textKey: continue
+--- !u!1 &647709680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647709681}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &647709681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647709680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 628743212}
+  m_Father: {fileID: 535280051}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &648108695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1108952731927402472, guid: 1523dab7e78623546aa2b1dd5509f2ec,
@@ -26079,7 +26585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cerveja
+  objectName: beer
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &652010541
 Rigidbody:
@@ -26839,7 +27345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garrafa
+  objectName: bottle
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &664652933
 Rigidbody:
@@ -27072,6 +27578,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246c5dda87a2b9a4faf3cbc64e10196d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &670557582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670557583}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &670557583
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670557582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 535280051}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: -0.000061035, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &672818856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30897,7 +31438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &805927220
 Rigidbody:
@@ -31025,7 +31566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &807149650
 Rigidbody:
@@ -31896,7 +32437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &828546092
 Rigidbody:
@@ -33875,7 +34416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d8ad4c39965d748a7981a1b80e3938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableTip: Interagir
+  interactableTip: interact
   targetAnimator: {fileID: 874653657}
   hiddenObject: {fileID: 1329767841}
   targetBoolToToggle: Open
@@ -34639,7 +35180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garrafa
+  objectName: bottle
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &892908092
 Rigidbody:
@@ -35373,7 +35914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Martelo
+  objectName: hammer
   pickUpLocation: {fileID: 536069914}
 --- !u!1001 &917945780
 PrefabInstance:
@@ -39804,7 +40345,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 119182, guid: 9e7b9a5d5dab450459315a75ec16fa02, type: 3}
       propertyPath: m_Name
-      value: Nota datas Coisas para fazer
+      value: Nota Coisas para fazer
       objectReference: {fileID: 0}
     - target: {fileID: 119182, guid: 9e7b9a5d5dab450459315a75ec16fa02, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39910,11 +40451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Coisas para lembrar:\r\n\r\n- Manter as plantas regadas.\r\n- Buscar
-    a crian\xE7a da escola.\r\n- Alimentar a crian\xE7a.\r\n- Esconder o martelo
-    para a crian\xE7a n\xE3o pegar de novo.\r\n- Pagar conta de luz.\r\n- Assistir
-    a s\xE9rie.\r\n- Pegar o celular da crian\xE7a do cofre."
+  noteName: note
+  descPuzzle: todonote
 --- !u!1001 &1050771947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40364,6 +40902,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 607a6d5926837b145af5c2a6d048b92e, type: 3}
+--- !u!1 &1073065899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073065900}
+  - component: {fileID: 1073065902}
+  - component: {fileID: 1073065901}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073065900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073065899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2067209892}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.552, y: 1}
+  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_SizeDelta: {x: 4.9999, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1073065901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073065899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.5921569, b: 0.9019608, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1073065902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073065899}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1073128535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40765,7 +41378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Chave de fenda
+  objectName: screwdriver
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1080144287
 Rigidbody:
@@ -40878,7 +41491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Trenzinho de brinquedo
+  objectName: train
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1081976179
 Rigidbody:
@@ -42216,8 +42829,7 @@ MonoBehaviour:
   - {fileID: 1779285999}
   targetNet: {fileID: 1087089703}
   feedBackLights: {fileID: 1347594569}
-  descPuzzle: "Existem diversos objetos pela casa, mas somente alguns ser\xE3o aceitos
-    pela cesta."
+  descPuzzle: descbasket
 --- !u!1001 &1120413016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44409,7 +45021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1181911218
 Rigidbody:
@@ -44703,6 +45315,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1185842917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1186181100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186181101}
+  - component: {fileID: 1186181102}
+  m_Layer: 5
+  m_Name: slHorizontalSens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1186181101
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186181100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1803451104}
+  - {fileID: 2067209892}
+  - {fileID: 1733263039}
+  m_Father: {fileID: 132861266}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -47}
+  m_SizeDelta: {x: 370.873, y: 76.1879}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1186181102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186181100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1073065900}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 25
+  m_MaxValue: 150
+  m_WholeNumbers: 0
+  m_Value: 94
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 370201418}
+        m_TargetAssemblyTypeName: ConfigPlayerLookSensitivity, Assembly-CSharp
+        m_MethodName: ChangeXSens
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1186590010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4134040610512308, guid: 419b03f06680d66468213533dc59243b,
@@ -45369,7 +46083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1212267715
 Rigidbody:
@@ -45897,7 +46611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1221418556
 Rigidbody:
@@ -46130,10 +46844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Uma pena que quando fomos na praia choveu bastante! Talvez seja por
-    isso que a crian\xE7a n\xE3o gosta de brincar na areia e prefere os blocos para
-    construir casinhas!"
+  noteName: note
+  descPuzzle: beachnote
 --- !u!1001 &1224545795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46459,7 +47171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1231762761
 Rigidbody:
@@ -46654,7 +47366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1239827972
 Rigidbody:
@@ -47697,7 +48409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1424d82b47fc9c24e99e7235bd369b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipText: Camera
+  tipText: camera
   targetToRotate: {fileID: 1024422457}
   right_Y_Rotation: 90
   possible_Y_Rotations: 2c0100005a000000
@@ -48933,13 +49645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Alguns anos de lan\xE7amentos interessantes com minha nova codifica\xE7\xE3o:\r\n\r\nHarry
-    Potter foi lan\xE7ado em  !((&\r\nO Computador foi inventado em !($#\r\nA primeira
-    transmiss\xE3o de radio foi feita em !*((\r\nO piano foi inventado em !&)(\r\nM\xE1quinas
-    de lavar ficaram muito populares nos anos *)\r\nA televis\xE3o foi lan\xE7ada
-    no ano de !(@%\r\nO rel\xF3gio foi inventado em !*!$\r\nA torradeira foi inventada
-    em !(!#"
+  noteName: note
+  descPuzzle: datenote
 --- !u!1001 &1291587808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49426,7 +50133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cerveja
+  objectName: beer
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1299601098
 Rigidbody:
@@ -49847,6 +50554,115 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 892391288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1310446828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1310446829}
+  - component: {fileID: 1310446833}
+  - component: {fileID: 1310446832}
+  - component: {fileID: 1310446831}
+  - component: {fileID: 1310446830}
+  m_Layer: 5
+  m_Name: txtConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1310446829
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310446828}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401122614}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000061035, y: 264.46304}
+  m_SizeDelta: {x: 406.49, y: 81.4698}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1310446830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310446828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1310446831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310446828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.65882355, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2dd02621d23f24d41ac888fcd42e886b, type: 3}
+    m_FontSize: 97
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 135
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Configura\xE7\xF5es"
+--- !u!114 &1310446832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310446828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490e14df6bce20e4eaa0b276bce7acbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textKey: config
+--- !u!222 &1310446833
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310446828}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1311309098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50464,7 +51280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1319864436
 Rigidbody:
@@ -51212,8 +52028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota Secreta
-  descPuzzle: Lareiras podem esconder coisas muito interessantes!
+  noteName: secretnote
+  descPuzzle: secretnote2
 --- !u!1 &1329861198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 119182, guid: 9e7b9a5d5dab450459315a75ec16fa02,
@@ -51238,10 +52054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota Secreta
-  descPuzzle: "Minha codifica\xE7\xE3o secreta:\n\n1 = !\n2 = @ \n3 = # \n4 = $\n5
-    = %\n6 = ~\n7 = &\n8 = * \n9 = (\n0 = )\n\nLembrar de deixar objetos que lembrem
-    a senha perto do teclado num\xE9rico!"
+  noteName: secretnote
+  descPuzzle: secretnote1
 --- !u!1001 &1330392282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53151,7 +53965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Refrigerante
+  objectName: soda
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1400376441
 Rigidbody:
@@ -53471,7 +54285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.842773}
+  m_AnchoredPosition: {x: 0, y: 81.15724}
   m_SizeDelta: {x: 488.5244, y: 113.84271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410838087
@@ -55270,7 +56084,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1731861663071578, guid: eac81a11a30f9f74a9ff4f8fde2d0459, type: 3}
       propertyPath: m_Name
-      value: SM_Prop_Art_Standing_02
+      value: Nota de verao
       objectReference: {fileID: 0}
     - target: {fileID: 1731861663071578, guid: eac81a11a30f9f74a9ff4f8fde2d0459, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -55346,9 +56160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b95dbd24cd60e42b5ed95c68f37872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteName: Nota
-  descPuzzle: "Esse dia de ver\xE3o foi muito bom! Estava com a mira em dia! Conseguia
-    acertar tanto o frisbee quanto a bola de futebol americano de longe na cesta!"
+  noteName: note
+  descPuzzle: summernote
 --- !u!1 &1441634756
 GameObject:
   m_ObjectHideFlags: 0
@@ -55633,7 +56446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1424d82b47fc9c24e99e7235bd369b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipText: Camera
+  tipText: camera
   targetToRotate: {fileID: 41668122}
   right_Y_Rotation: 270
   possible_Y_Rotations: 000000000e010000
@@ -56186,7 +56999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1450836180
 Rigidbody:
@@ -56939,7 +57752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Bola Americana
+  objectName: football
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1459865784
 MonoBehaviour:
@@ -57472,7 +58285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Refrigerante
+  objectName: soda
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1471247567
 Rigidbody:
@@ -57767,7 +58580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1474038953
 Rigidbody:
@@ -58329,7 +59142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1487571892
 Rigidbody:
@@ -58638,7 +59451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Telhado de brinquedo
+  objectName: buildingblock
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1496110630
 MonoBehaviour:
@@ -61140,7 +61953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Refrigerante
+  objectName: soda
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1543145783
 Rigidbody:
@@ -61737,7 +62550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1560749451
 Rigidbody:
@@ -63612,7 +64425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d8ad4c39965d748a7981a1b80e3938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableTip: Interagir
+  interactableTip: interact
   targetAnimator: {fileID: 1597204762}
   hiddenObject: {fileID: 1329861198}
   targetBoolToToggle: Open
@@ -66459,8 +67272,7 @@ MonoBehaviour:
   - {fileID: 1448069657}
   feedBackLights: {fileID: 5599351383843150149}
   safeToOpen: {fileID: 1230595850445139}
-  descPuzzle: "Existem 4 teclados de seguran\xE7a espalhados pela casa! Este cofre
-    n\xE3o ir\xE1 abrir sozinho! (Obs: Datas s\xE3o \xF3timas senhas)"
+  descPuzzle: descnumeric
 --- !u!1001 &1658209218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66575,7 +67387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Suco de Laranja
+  objectName: orangejuice
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1659096087
 Rigidbody:
@@ -67226,7 +68038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1666551459
 Rigidbody:
@@ -69088,7 +69900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Suco de Laranja
+  objectName: orangejuice
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1705956025
 Rigidbody:
@@ -69811,6 +70623,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb2f253baec511248b974eff37d0afba, type: 3}
+--- !u!1 &1733263038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733263039}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1733263039
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733263038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186181101}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: -0.000061035, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1734118602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71756,7 +72603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Burger
+  objectName: burger
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1779286001
 MonoBehaviour:
@@ -72261,6 +73108,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1802322862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1803451103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803451104}
+  - component: {fileID: 1803451106}
+  - component: {fileID: 1803451105}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1803451104
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803451103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186181101}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1803451105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803451103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.09803922, g: 0.16470589, b: 0.3372549, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1803451106
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803451103}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1808648027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73130,7 +74052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1831222357
 Rigidbody:
@@ -74508,7 +75430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1868506556
 Rigidbody:
@@ -74952,7 +75874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Bloco de brinquedo
+  objectName: buildingblock
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1876434984
 MonoBehaviour:
@@ -75413,7 +76335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -133.68549}
+  m_AnchoredPosition: {x: 0, y: -32.68547}
   m_SizeDelta: {x: 488.5244, y: 113.84271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1900845445
@@ -75994,7 +76916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1905774747
 Rigidbody:
@@ -78159,7 +79081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Refrigerante
+  objectName: soda
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1955461121
 Rigidbody:
@@ -78604,7 +79526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Bola
+  objectName: soccerball
   pickUpLocation: {fileID: 536069914}
 --- !u!114 &1963465342
 MonoBehaviour:
@@ -79021,7 +79943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Controle Remoto
+  objectName: control
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1970350010
 Rigidbody:
@@ -79458,7 +80380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garrafa
+  objectName: bottle
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1980560835
 Rigidbody:
@@ -79784,6 +80706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990071040}
   - component: {fileID: 1990071043}
+  - component: {fileID: 1990071044}
   - component: {fileID: 1990071042}
   - component: {fileID: 1990071041}
   m_Layer: 5
@@ -79809,8 +80732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: -138.83875}
-  m_SizeDelta: {x: 875.2275, y: 242.3196}
+  m_AnchoredPosition: {x: -0.000030517578, y: -109.78604}
+  m_SizeDelta: {x: 875.2275, y: 184.2141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990071041
 MonoBehaviour:
@@ -79869,6 +80792,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990071039}
   m_CullTransparentMesh: 0
+--- !u!114 &1990071044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990071039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490e14df6bce20e4eaa0b276bce7acbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textKey: paused
 --- !u!1001 &1993336121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83253,6 +84189,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2065973967}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2067209891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067209892}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2067209892
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067209891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1073065900}
+  m_Father: {fileID: 1186181101}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2079159719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84113,8 +85085,7 @@ MonoBehaviour:
   - {fileID: 1442637569}
   - {fileID: 1261208413}
   feedBackLights: {fileID: 5599351383257738756}
-  descPuzzle: "N\xE3o \xE9 legal que as pessoas te espionem quando voc\xEA estiver
-    mexendo no computador."
+  descPuzzle: descrotation
 --- !u!1 &2095964188
 GameObject:
   m_ObjectHideFlags: 0
@@ -84316,7 +85287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copinho
+  objectName: cup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &2099270963
 Rigidbody:
@@ -84995,7 +85966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "Papel Higi\xEAnico"
+  objectName: toiletpaper
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &2128269424
 Rigidbody:
@@ -85673,7 +86644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Espatula
+  objectName: scrapper
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &2141982005
 Rigidbody:
@@ -85801,7 +86772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Controle Remoto
+  objectName: control
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &2142495933
 Rigidbody:
@@ -86062,7 +87033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Hot-Dog
+  objectName: hotdog
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1064908711328950
 Rigidbody:
@@ -86146,7 +87117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Balde de areia
+  objectName: sandbucket
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1103911524056928
 Rigidbody:
@@ -86197,7 +87168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Controle Remoto
+  objectName: control
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1113139820267779
 Rigidbody:
@@ -86248,7 +87219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1116217647075256
 Rigidbody:
@@ -86299,7 +87270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Salsicha
+  objectName: sausage
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1159810842816276
 Rigidbody:
@@ -86406,7 +87377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Suco de Laranja
+  objectName: orangejuice
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1181754658728121
 Rigidbody:
@@ -86526,7 +87497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Controle Remoto
+  objectName: control
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1217611984493937
 Rigidbody:
@@ -86645,7 +87616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Pote
+  objectName: bowl
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1284311065998507
 Rigidbody:
@@ -86696,7 +87667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copinho
+  objectName: cup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1295620155627568
 Rigidbody:
@@ -86747,7 +87718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Espatula
+  objectName: scrapper
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1446758874517833
 Rigidbody:
@@ -86798,7 +87769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Refrigerante
+  objectName: soda
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1448303113100875
 Rigidbody:
@@ -86862,7 +87833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Almofada
+  objectName: cushion
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1491143757645416
 Rigidbody:
@@ -86913,7 +87884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Copo Cerveja
+  objectName: beercup
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1497324861474091
 Rigidbody:
@@ -86964,7 +87935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garfo
+  objectName: fork
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1503166715954591
 Rigidbody:
@@ -87080,7 +88051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Chave Inglesa
+  objectName: wrench
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1625431526029151
 Rigidbody:
@@ -87131,7 +88102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Chave de fenda
+  objectName: screwdriver
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1712558907284023
 Rigidbody:
@@ -87198,7 +88169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "Papel Higi\xEAnico"
+  objectName: toiletpaper
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1786859138656980
 Rigidbody:
@@ -87249,7 +88220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Garrafa
+  objectName: bottle
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1820832020059992
 Rigidbody:
@@ -87372,7 +88343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cerveja
+  objectName: beer
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1842666782142096
 Rigidbody:
@@ -87436,7 +88407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Faca
+  objectName: knife
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1931290781826391
 Rigidbody:
@@ -87590,7 +88561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Tomate
+  objectName: tomato
   pickUpLocation: {fileID: 536069914}
 --- !u!54 &1967610761153452
 Rigidbody:
@@ -91251,7 +92222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f94dd2e8e8e2fc4faf16b80482c4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "Celular da Crian\xE7a"
+  objectName: smartphone
   pickUpLocation: {fileID: 536069914}
 --- !u!65 &4876507674022225153
 BoxCollider:
@@ -93006,7 +93977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1424d82b47fc9c24e99e7235bd369b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipText: Camera
+  tipText: camera
   targetToRotate: {fileID: 7943162343188537486}
   right_Y_Rotation: 270
   possible_Y_Rotations: 0f000000000000000e010000

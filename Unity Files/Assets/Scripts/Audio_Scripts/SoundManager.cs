@@ -23,9 +23,9 @@ public class SoundManager : MonoBehaviour {
     [SerializeField]
     private AudioSource normalEmissor;
 
-    //Public Static
-    public static Dictionary<string, SoundFX> listaSons;
-    public static AudioSource storedNormalEmissor;
+    //Statics
+    static Dictionary<string, SoundFX> listaSons;
+    static AudioSource storedNormalEmissor;
 
     private void Awake()
     {

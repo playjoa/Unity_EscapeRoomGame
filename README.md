@@ -7,7 +7,8 @@ Development Status: <strong> Playable to end! </strong>
 
 ### Developement info:
 Started development in Unity <strong>2019.4</strong> using URP <strong> v10.4.0. </strong> <br>
-Migrated to Unity <strong>2020.3.5f1</strong> due to a bug in that didn't let me bake lights with my video card! 
+Migrated to Unity <strong>2020.3.5f1</strong> due to a bug in that didn't let me bake lights with my video card! <br>
+Development time: 5 days. <br>
 
 ### Assets Used: <br>
 
@@ -23,7 +24,7 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 ### How to Install:
 
 Works on (PC Windows) <br>
-Available Languages: <strong> Portuguese </strong><br>
+Available Languages: <strong>English, Portuguese </strong><br>
 
 Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on your machine. Unzip and launch "Escape Room.exe". You can send the icon to your desktop if you want too. <br>
 

@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bcbcc38c918304aba4d2452803dbec, type: 3}
+  m_Name: Ingles
+  m_EditorClassIdentifier: 
+  keyLanguage: 10
+  textsToTranslate:
+  - keyText: play
+    translatedText: Play
+  - keyText: howtoplay
+    translatedText: How to play
+  - keyText: config
+    translatedText: Settings
+  - keyText: exit
+    translatedText: Exit
+  - keyText: madeby
+    translatedText: "Made by Jo\xE3o Milone"
+  - keyText: loading
+    translatedText: Loading...
+  - keyText: moveinfo
+    translatedText: 'Use WASD to move:'
+  - keyText: lookinfo
+    translatedText: 'Use the mouse to look around:'
+  - keyText: clickinfo
+    translatedText: 'Click to interact with stuff:'
+  - keyText: tutorial
+    translatedText: "- There are puzzles scattered around the house, they will be
+      marked by red lamps.\r\n- Each lamp represents a task to be done. Complete
+      them all to complete the puzzle.\r\n- Look for clues around the house, they
+      will help you complete the tasks.\r\n- After completing all the puzzles, you
+      will be able to leave the house.\r\n- You have 15 minutes to escape.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGood
+      Luck!"
+  - keyText: back
+    translatedText: Back
+  - keyText: resolution
+    translatedText: 'Resolution:'
+  - keyText: language
+    translatedText: 'Language:'
+  - keyText: graphics
+    translatedText: 'Graphics Quality:'
+  - keyText: audio
+    translatedText: 'Audio:'
+  - keyText: low
+    translatedText: Low
+  - keyText: normal
+    translatedText: Normal
+  - keyText: ultra
+    translatedText: Ultra
+  - keyText: sandbucket
+    translatedText: Bucket with sand
+  - keyText: bowl
+    translatedText: Bowl
+  - keyText: beercup
+    translatedText: Beer cup
+  - keyText: bottle
+    translatedText: Bottle
+  - keyText: fork
+    translatedText: Fork
+  - keyText: knife
+    translatedText: Knife
+  - keyText: cup
+    translatedText: Cup
+  - keyText: beer
+    translatedText: Beer
+  - keyText: soda
+    translatedText: Soda
+  - keyText: wrench
+    translatedText: Wrench
+  - keyText: hammer
+    translatedText: Hammer
+  - keyText: toiletpaper
+    translatedText: Toilet Paper
+  - keyText: sausage
+    translatedText: Sausage
+  - keyText: tomato
+    translatedText: Tomato
+  - keyText: hotdog
+    translatedText: Hot dog
+  - keyText: cushion
+    translatedText: Cushion
+  - keyText: orangejuice
+    translatedText: Orange Juice
+  - keyText: control
+    translatedText: Remote Control
+  - keyText: note
+    translatedText: Note
+  - keyText: scrapper
+    translatedText: Scrapper
+  - keyText: password
+    translatedText: Type password
+  - keyText: summernote
+    translatedText: That summer day was awesome! I was hitting every throw! I could
+      hit both the frisbee and the football from far away in the basketball hoop!
+  - keyText: datenote
+    translatedText: 'A few years of interesting releases with my new coding:
+
+      
+
+      Harry
+      Potter book saga was released in !((&
+
+      The Computer was invented in
+      !($#
+
+      The first radio transmission was made in !*((
+
+      The piano
+      was invented in !&)(
+
+      Washing machines became very popular in the years
+      *)
+
+      TV was launched in the year !(@%
+
+      The watch was invented
+      in !*!$
+
+      The toaster was invented in !(!#'
+  - keyText: basketnote
+    translatedText: Sometimes I like to use a hamburger as a ball!
+  - keyText: todonote
+    translatedText: 'To do list:
+
+      
+
+      - Keep the plants watered.
+
+      -
+      Pick up the kid from school.
+
+      - Feed the kid.
+
+      - Hide the hammer
+      so the child doesn''t pick up again.
+
+      - Pay the bills.
+
+      - Watch
+      the serie.
+
+      - Get the kids smartphone from the safe.'
+  - keyText: puzzlenote
+    translatedText: This door will only open after completing all the puzzles around
+      the house.
+  - keyText: beachnote
+    translatedText: It sucks that when we went to the beach it rained a lot! Maybe
+      that's why the kid doesn't like to play in the sand and prefers blocks to build
+      houses!
+  - keyText: booksnote
+    translatedText: 'Books locations:
+
+      
+
+      Physics books: Computer room
+
+      Math
+      Books: Computer Room
+
+      Music books: On top of the piano
+
+      Harry
+      Potter Saga: Over the fireplace
+
+      Lord of the Rings Saga: Dining room
+      bookcase
+
+      Chronicles of Narnia: Dining room bookcase'
+  - keyText: football
+    translatedText: Football
+  - keyText: soccerball
+    translatedText: Soccerball
+  - keyText: frisbee
+    translatedText: Frisbee
+  - keyText: burger
+    translatedText: Hamburger
+  - keyText: buildingblock
+    translatedText: Building Block
+  - keyText: train
+    translatedText: Toy Train
+  - keyText: smartphone
+    translatedText: Kid's Smartphone
+  - keyText: camera
+    translatedText: Security Camera
+  - keyText: secretnote
+    translatedText: Secret Note
+  - keyText: interact
+    translatedText: Interact
+  - keyText: descnumeric
+    translatedText: 'There are 4 security keyboards around the house! This safe will
+      not open by itself! (Note: Dates are great passwords)'
+  - keyText: descbasket
+    translatedText: There are several objects around the house, but only a few will
+      be accepted by the hoop.
+  - keyText: desctoygather
+    translatedText: Children are very messy, they always spread their toys around
+      the house! Fix that mess!
+  - keyText: descrotation
+    translatedText: It is not cool for people to spy on you when you are using with
+      the computer.
+  - keyText: continue
+    translatedText: Continue
+  - keyText: paused
+    translatedText: Paused
+  - keyText: screwdriver
+    translatedText: Screwdriver
+  - keyText: success
+    translatedText: SUCCESS!
+  - keyText: gameover
+    translatedText: GAME OVER!
+  - keyText: leavehouse
+    translatedText: Leave the house!
+  - keyText: secretnote1
+    translatedText: "My secret encoding:\r\n\r\n1 = !\r\n2 = @ \r\n3 = # \r\n4 =
+      $\r\n5 = %\r\n6 = ~\r\n7 = &\r\n8 = * \r\n9 = (\r\n0 = )\r\n\r\nRemember to
+      leave objects that remember your password near the numeric keypad!"
+  - keyText: secretnote2
+    translatedText: Fireplaces can hide very interesting things!

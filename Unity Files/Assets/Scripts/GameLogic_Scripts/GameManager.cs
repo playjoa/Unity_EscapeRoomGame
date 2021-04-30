@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     void FinishWithSuccess()
     {
-        UI_Manager.Instance.Set_TimerWithColor("Saia da Casa!", UI_Colors.ColorComplete);
+        UI_Manager.Instance.Set_TimerWithColor("leavehouse", UI_Colors.ColorComplete);
         CancelInvoke();
         GameState.SwitchToComplete();
         AvailableGameEvents.Instance.AllPuzzlesComplete?.Invoke();

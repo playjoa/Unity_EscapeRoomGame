@@ -22,13 +22,13 @@ public class GameOverScreenLoader : MonoBehaviour
 
     void PlayerWon()
     {
-        UI_Manager.Instance.Set_GameOverTextAndColor("SUCESSO!", UI_Colors.ColorComplete);
+        UI_Manager.Instance.Set_GameOverTextAndColor("success", UI_Colors.ColorComplete);
         SoundManager.PlaySoundInList("win", 1);
     }
 
     void PlayerLost()
     {
-        UI_Manager.Instance.Set_GameOverTextAndColor("GAME OVER!", UI_Colors.ColorIncomplete);
+        UI_Manager.Instance.Set_GameOverTextAndColor("gameover", UI_Colors.ColorIncomplete);
         SoundManager.PlaySoundInList("lose", 1);
     }
 }

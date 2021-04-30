@@ -10,7 +10,7 @@
     public string PuzzleStatus()
     {
         if (AreTasksComplete())
-            return "Completo!";
+            return "100%!";
 
         return PorcentagemTasksComplete();
     }

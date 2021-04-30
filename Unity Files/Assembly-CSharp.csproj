@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\GameEvents_Script\GameEventListenterWithDelay.cs" />
     <Compile Include="Assets\Scripts\Interactable_Scripts\InteractableNote.cs" />
     <Compile Include="Assets\Scripts\GameLogic_Scripts\GamePauser.cs" />
+    <Compile Include="Assets\Scripts\TranslationSystem_Scripts\Translator_UI_Text.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\PlayerInteractions.cs" />
     <Compile Include="Assets\Scripts\Puzzles&amp;Tasks_Scritps\PuzzleStats.cs" />
@@ -81,6 +82,8 @@
     <Compile Include="Assets\Scripts\Interfaces and Others\GameState.cs" />
     <Compile Include="Assets\Scripts\Other_Scripts\CloseApplication.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\PlayerMovement_Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\TranslationSystem_Scripts\Base System\TranslatedText.cs" />
+    <Compile Include="Assets\Scripts\TranslationSystem_Scripts\LanguageSettings.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Audio_Scripts\SoundtrackManager.cs" />
     <Compile Include="Assets\Scripts\SceneLoaders_Scripts\GoToScene.cs" />
@@ -105,14 +108,17 @@
     <Compile Include="Assets\Scripts\Puzzles&amp;Tasks_Scritps\ToyGatherPuzzle\ToyGatherTask.cs" />
     <Compile Include="Assets\Scripts\Other_Scripts\OpenWebPage.cs" />
     <Compile Include="Assets\Scripts\Twean_Scripts\TweenerAnimation.cs" />
+    <Compile Include="Assets\Scripts\TranslationSystem_Scripts\Base System\Translate.cs" />
     <Compile Include="Assets\Scripts\Audio_Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Twean_Scripts\LeanTweanerListAnimator.cs" />
     <Compile Include="Assets\Scripts\GameLogic_Scripts\GameOverScreenLoader.cs" />
+    <Compile Include="Assets\Scripts\TranslationSystem_Scripts\Base System\Language.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\Scripts\GameEvents_Script\AvailableGameEvents.cs" />
     <Compile Include="Assets\Scripts\UI_Scripts\NoteOperator.cs" />
     <Compile Include="Assets\Scripts\Puzzles&amp;Tasks_Scritps\Basket Puzzle\BasketBallTask.cs" />
     <Compile Include="Assets\Scripts\GameEvents_Script\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Other_Scripts\ConfigPlayerLookSensitivity.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\LeanTween\ReadMe.txt" />

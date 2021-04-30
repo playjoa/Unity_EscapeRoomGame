@@ -4,7 +4,6 @@ using UnityEngine.Events;
 
 public class GameEventListenterWithDelay : GameEventListenter
 {
-
     [SerializeField]
     private float delayForEvent = 1f;
 

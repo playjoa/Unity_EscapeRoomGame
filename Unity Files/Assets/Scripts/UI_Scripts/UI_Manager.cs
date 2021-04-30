@@ -93,13 +93,13 @@ public class UI_Manager : MonoBehaviour
 
     public void Set_TipText(string valueToSet) 
     {
-        txtTip.text = valueToSet;
+        txtTip.text = Translate.GetTranslatedText(valueToSet);
     }
 
     public void Set_Note(string valueToSet)
     {
         ActivateIndividualScreen("note");
-        txtNote.text = valueToSet;
+        txtNote.text = Translate.GetTranslatedText(valueToSet);
     }
 
     public void Set_Timer(string valueToSet)
@@ -109,7 +109,7 @@ public class UI_Manager : MonoBehaviour
 
     public void Set_GameOverTextAndColor(string valueToSet, UI_Colors statusColor)
     {
-        txtGameOverText.text = valueToSet;
+        txtGameOverText.text = Translate.GetTranslatedText(valueToSet);
         txtGameOverText.color = ColorToSet(statusColor);
     }
 
@@ -117,6 +117,9 @@ public class UI_Manager : MonoBehaviour
     {
         txtTimer.text = valueToSet;
         txtTimer.color = ColorToSet(statusColor);
+
+        if (valueToSet == "leavehouse")
+            txtTimer.text = Translate.GetTranslatedText(valueToSet);
     }
 
     public void Set_CurrentPasswordText(string valueToSet)
@@ -162,7 +165,7 @@ public class UI_Manager : MonoBehaviour
         cardPuzzle.SetActive(true);
         txtStatsPuzzle.text = "Status: " + statusPuzzle;
         txtStatsPuzzle.color = ColorToSet(statusColor);
-        txtDescPuzzle.text = descPuzzle;
+        txtDescPuzzle.text = Translate.GetTranslatedText(descPuzzle);
     }
 
     public void DeactivatePuzzleCard()

@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bcbcc38c918304aba4d2452803dbec, type: 3}
+  m_Name: Portugues
+  m_EditorClassIdentifier: 
+  keyLanguage: 28
+  textsToTranslate:
+  - keyText: play
+    translatedText: Jogar
+  - keyText: howtoplay
+    translatedText: Como Jogar
+  - keyText: config
+    translatedText: "Configura\xE7\xF5es"
+  - keyText: exit
+    translatedText: Sair
+  - keyText: madeby
+    translatedText: "Feito por Jo\xE3o Milone"
+  - keyText: loading
+    translatedText: Carregando...
+  - keyText: moveinfo
+    translatedText: 'Para se movimentar use:'
+  - keyText: lookinfo
+    translatedText: 'Use o mouse para olhar em volta:'
+  - keyText: clickinfo
+    translatedText: 'Clique com o mouse para interagir:'
+  - keyText: tutorial
+    translatedText: "- Existem puzzles espalhados pela casa, eles estar\xE3o marcados
+      por l\xE2mpadas vermelhas.\n- Cada l\xE2mpada representa uma task a ser feita.
+      Complete todas para concluir o puzzle.\n- Procure por pistas pela casa, elas
+      ir\xE3o ajudar a realizar as tasks.\n- Ap\xF3s completar todos os puzzles a
+      porta ir\xE1 se abrir e voc\xEA poder\xE1 sair da casa.\n- Voc\xEA ter\xE1
+      15 minutos para escapar.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBoa
+      Sorte!"
+  - keyText: back
+    translatedText: Voltar
+  - keyText: resolution
+    translatedText: "Resolu\xE7\xE3o:"
+  - keyText: language
+    translatedText: 'Idioma:'
+  - keyText: graphics
+    translatedText: "Qualidade Gr\xE1fica:"
+  - keyText: audio
+    translatedText: 'Audio:'
+  - keyText: low
+    translatedText: Baixo
+  - keyText: normal
+    translatedText: Normal
+  - keyText: ultra
+    translatedText: Ultra
+  - keyText: sandbucket
+    translatedText: Balde de Areia
+  - keyText: bowl
+    translatedText: Pote
+  - keyText: beercup
+    translatedText: Copo de Cerveja
+  - keyText: bottle
+    translatedText: Garrafa
+  - keyText: fork
+    translatedText: Garfo
+  - keyText: knife
+    translatedText: Faca
+  - keyText: cup
+    translatedText: Copinho
+  - keyText: beer
+    translatedText: Cerveja
+  - keyText: soda
+    translatedText: Refrigerante
+  - keyText: wrench
+    translatedText: Chave Inglesa
+  - keyText: hammer
+    translatedText: Martelo
+  - keyText: toiletpaper
+    translatedText: "Papel Higi\xEAnico"
+  - keyText: sausage
+    translatedText: Salsicha
+  - keyText: tomato
+    translatedText: Tomate
+  - keyText: hotdog
+    translatedText: Cachorro-Quente
+  - keyText: cushion
+    translatedText: Almofada
+  - keyText: orangejuice
+    translatedText: Suco de Laranja
+  - keyText: control
+    translatedText: Controle Remoto
+  - keyText: note
+    translatedText: Nota
+  - keyText: scrapper
+    translatedText: Espatula
+  - keyText: password
+    translatedText: Digite a senha
+  - keyText: summernote
+    translatedText: "Esse dia de ver\xE3o foi muito bom! Estava com a mira em dia!
+      Conseguia acertar tanto o frisbee quanto a bola de futebol americano de longe
+      na cesta!"
+  - keyText: datenote
+    translatedText: "Alguns anos de lan\xE7amentos interessantes com minha nova codifica\xE7\xE3o:\r\n\r\nHarry
+      Potter foi lan\xE7ado em  !((&\r\nO Computador foi inventado em !($#\r\nA primeira
+      transmiss\xE3o de radio foi feita em !*((\r\nO piano foi inventado em !&)(\r\nM\xE1quinas
+      de lavar ficaram muito populares nos anos *)\r\nA televis\xE3o foi lan\xE7ada
+      no ano de !(@%\r\nO rel\xF3gio foi inventado em !*!$\r\nA torradeira foi inventada
+      em !(!#"
+  - keyText: basketnote
+    translatedText: "\xC0s vezes eu gosto de usar um hamburguer como bola!"
+  - keyText: todonote
+    translatedText: "Coisas para lembrar:\r\n\r\n- Manter as plantas regadas.\r\n-
+      Buscar a crian\xE7a da escola.\r\n- Alimentar a crian\xE7a.\r\n- Esconder o
+      martelo para a crian\xE7a n\xE3o pegar de novo.\r\n- Pagar conta de luz.\r\n-
+      Assistir a s\xE9rie.\r\n- Pegar o celular da crian\xE7a do cofre."
+  - keyText: puzzlenote
+    translatedText: "Essa porta s\xF3 ir\xE1 abrir ap\xF3s concluir todos os puzzles
+      espalhados pela casa."
+  - keyText: beachnote
+    translatedText: "Uma pena que quando fomos na praia choveu bastante! Talvez seja
+      por isso que a crian\xE7a n\xE3o gosta de brincar na areia e prefere os blocos
+      para construir casinhas!"
+  - keyText: booksnote
+    translatedText: "Localiza\xE7\xE3o de livros:\r\n\r\nLivros de f\xEDsica: Quarto
+      do computador\r\nLivros de matem\xE1tica: Quarto do computador\r\nLivros sobre
+      m\xFAsica: Em cima do piano\r\nSaga Harry Potter: Em cima da lareira\r\nSaga
+      Senhor dos An\xE9is: Estante da sala de jantar\r\nCr\xF4nicas de N\xE1rnia:
+      Estante da sala de jantar"
+  - keyText: football
+    translatedText: Bola americana
+  - keyText: soccerball
+    translatedText: Bola
+  - keyText: frisbee
+    translatedText: Frisbee
+  - keyText: burger
+    translatedText: Hamburger
+  - keyText: buildingblock
+    translatedText: Bloco de Construir
+  - keyText: train
+    translatedText: Trem de brinquedo
+  - keyText: smartphone
+    translatedText: "Celular da Crian\xE7a"
+  - keyText: camera
+    translatedText: "Camera de Seguran\xE7a"
+  - keyText: secretnote
+    translatedText: Nota Secreta
+  - keyText: interact
+    translatedText: Interagir
+  - keyText: descnumeric
+    translatedText: "Existem 4 teclados de seguran\xE7a espalhados pela casa! Este
+      cofre n\xE3o ir\xE1 abrir sozinho! (Obs: Datas s\xE3o \xF3timas senhas)"
+  - keyText: descbasket
+    translatedText: "Existem diversos objetos pela casa, mas somente alguns ser\xE3o
+      aceitos pela cesta."
+  - keyText: desctoygather
+    translatedText: "Crian\xE7as s\xE3o muito bagunceiras, sempre espalham os seus
+      brinquedos pela casa! Arrume essa babun\xE7a!"
+  - keyText: descrotation
+    translatedText: "N\xE3o \xE9 legal que as pessoas te espionem quando voc\xEA
+      estiver mexendo no computador."
+  - keyText: continue
+    translatedText: Continuar
+  - keyText: paused
+    translatedText: Pausado
+  - keyText: screwdriver
+    translatedText: Chave de fenda
+  - keyText: success
+    translatedText: SUCESSO!
+  - keyText: gameover
+    translatedText: GAME OVER!
+  - keyText: leavehouse
+    translatedText: Saia da Casa!
+  - keyText: secretnote1
+    translatedText: "Minha codifica\xE7\xE3o secreta:\n\n1 = !\n2 = @ \n3 = # \n4
+      = $\n5 = %\n6 = ~\n7 = &\n8 = * \n9 = (\n0 = )\n\nLembrar de deixar objetos
+      que lembrem a senha perto do teclado num\xE9rico!"
+  - keyText: secretnote2
+    translatedText: Lareiras podem esconder coisas muito interessantes!
