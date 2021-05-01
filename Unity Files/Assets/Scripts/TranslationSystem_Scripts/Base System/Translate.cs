@@ -81,7 +81,7 @@ public static class Translate
 
         currentLanguage = newLanguage;
 
-        RegisterLanguageNewMemory(currentLanguage);
+        RegisterNewLanguageToMemory(currentLanguage);
 
         OnLanguageChanged?.Invoke();
     }
@@ -93,7 +93,7 @@ public static class Translate
         return new List<SystemLanguage>(languageDictionary.Keys);
     }
 
-    static void RegisterLanguageNewMemory(SystemLanguage newLanguage) 
+    static void RegisterNewLanguageToMemory(SystemLanguage newLanguage) 
     {
         PlayerPrefs.SetString(playerPrefLanguage, newLanguage.ToString());
     }
