@@ -18,7 +18,6 @@ public class LanguageSettings : MonoBehaviour
         List<string> languagesNames = new List<string>();
         int idCurrentLanguage = 0;
 
-
         dropDownLanguageOptions.ClearOptions();
 
         for (int i = 0; i < Translate.AvailableLanguages().Count; i++)
