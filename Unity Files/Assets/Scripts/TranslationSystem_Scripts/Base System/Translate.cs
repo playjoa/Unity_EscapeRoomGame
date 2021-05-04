@@ -46,7 +46,10 @@ public static class Translate
         SystemLanguage currentSystemLanguage = CurrentSystemLanguage();
 
         if (!languageDictionary.ContainsKey(currentSystemLanguage))
+        {
             currentLanguage = defaultLanguage;
+            return;
+        }
 
         currentLanguage = currentSystemLanguage;
     }
