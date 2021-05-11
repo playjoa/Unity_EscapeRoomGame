@@ -38,13 +38,13 @@ Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on y
 ## Gameplay screenshot!
 ![1](Screenshots/Screenshot_1.png)
 
-<center>.</center>
+<center></center>
 <p align="center">
   <br>.<br>
   <br>.<br>
   <br>.<br>
   <br>.<br>
-  <br><br>
+  <br>.<br>
 </p>
 
 
