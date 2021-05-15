@@ -36,7 +36,7 @@ public class UI_Manager : MonoBehaviour
     private Color colorComplete = Color.green, colorIncomplete = Color.red;
 
     [SerializeField]
-    private GameObject cardPuzzle;
+    private GameObject cardPuzzle, UI_MobileInputs;
 
     [SerializeField]
     private Text txtTip, txtCurrentPassword, txtStatsPuzzle, txtDescPuzzle, txtNote, txtTimer, txtGameOverText;
@@ -150,6 +150,11 @@ public class UI_Manager : MonoBehaviour
     public void ToggleGameOverScreen()
     {
         ActivateIndividualScreen("gameover");
+    }
+
+    public void ToggleUI_Inputs(bool value)
+    {
+        UI_MobileInputs.SetActive(value);
     }
 
     public void TogglePauseScreen(bool value)

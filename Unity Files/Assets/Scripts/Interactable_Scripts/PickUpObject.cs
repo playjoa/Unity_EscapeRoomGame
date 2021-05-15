@@ -13,7 +13,6 @@ public class PickUpObject : MonoBehaviour, InteractableObject
 
     private Transform previousParent;
 
-
     public bool IsPickingUp => rb.isKinematic;
 
     private void Awake()
@@ -31,7 +30,7 @@ public class PickUpObject : MonoBehaviour, InteractableObject
 
     public void Interact()
     {
-        PickObject();
+        ProcessInteract();
     }
 
     public void ActivateInteractionFeedback()
@@ -44,7 +43,6 @@ public class PickUpObject : MonoBehaviour, InteractableObject
         UI_Manager.Instance.Set_TipText(string.Empty);
     }
 
-
     public void DeativatePìckUp() 
     {
         canPickUp = false;
@@ -55,9 +53,15 @@ public class PickUpObject : MonoBehaviour, InteractableObject
         canPickUp = true;
     }
 
-    private void OnMouseUp()
+    void ProcessInteract()
     {
-        LetGoObject();
+        if (IsPickingUp)
+        {
+            LetGoObject();
+            return;
+        }
+
+        PickObject();
     }
 
     void PickObject() 

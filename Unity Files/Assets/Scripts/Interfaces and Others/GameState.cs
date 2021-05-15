@@ -10,6 +10,8 @@
 
     static void SetState(State newState)
     {
+        PlayerInputs.ResetJoySticks();
+
         currentState = newState;
     }
 

@@ -4,14 +4,19 @@ public static class MouseLocker
 {
     public static void LockMouse() 
     {
+        if (PlayerInputs.isOnMobile)
+            return;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     public static void FreeMouse()
     {
+        if (PlayerInputs.isOnMobile)
+            return;
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+       Cursor.lockState = CursorLockMode.None;
+       Cursor.visible = true;
     }
 }

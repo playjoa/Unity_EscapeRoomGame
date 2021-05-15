@@ -41,7 +41,7 @@ public class PlayerInteractions : MonoBehaviour
 
     void CheckIfInteracted()
     {
-        if (PlayerInputs.PressedInteracted())
+        if (PlayerInputs.PressedInteracted)
         {
             if (currentObject == null)
                 return;
@@ -74,9 +74,14 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
+    Vector3 CameraPosition => fpsCamera.transform.position;
+
+
+    Vector3 CameraDirection => fpsCamera.transform.forward;
+
     bool CheckIfTheresAGameObjectInReach() 
     {
-        return Physics.Raycast(fpsCamera.ScreenPointToRay(Input.mousePosition), out hitInfo, reachRange);
+        return Physics.Raycast(CameraPosition, CameraDirection, out hitInfo, reachRange);
     }
 
     GameObject CurrentHittingObject() 

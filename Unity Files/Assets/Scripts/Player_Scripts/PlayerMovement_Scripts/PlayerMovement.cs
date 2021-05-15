@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         if (!canJump)
             return;
 
-        if (PlayerInputs.PressedJump() && isGrounded)      
+        if (PlayerInputs.PressedJump && isGrounded)      
             gravityVelocity.y = JumpForce();      
     }
 

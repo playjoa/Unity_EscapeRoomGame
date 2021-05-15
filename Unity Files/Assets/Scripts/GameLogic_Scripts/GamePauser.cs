@@ -9,7 +9,7 @@ public class GamePauser : MonoBehaviour
 
     void CheckForPause()
     {
-        if (PlayerInputs.PressedPaused())
+        if (PlayerInputs.PressedPaused)
         {
             ProcessPause();
         }
