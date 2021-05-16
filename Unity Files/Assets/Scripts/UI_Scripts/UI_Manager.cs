@@ -36,7 +36,7 @@ public class UI_Manager : MonoBehaviour
     private Color colorComplete = Color.green, colorIncomplete = Color.red;
 
     [SerializeField]
-    private GameObject cardPuzzle, UI_MobileInputs;
+    private GameObject cardPuzzle, UI_MobileInputs, rateUsCard;
 
     [SerializeField]
     private Text txtTip, txtCurrentPassword, txtStatsPuzzle, txtDescPuzzle, txtNote, txtTimer, txtGameOverText;
@@ -125,6 +125,11 @@ public class UI_Manager : MonoBehaviour
     public void Set_CurrentPasswordText(string valueToSet)
     {
         txtCurrentPassword.text = valueToSet;
+    }
+
+    public void ToggleCardRateUs(bool value)
+    {
+        rateUsCard.SetActive(value);
     }
 
     public void ToggleTutorialScreen()

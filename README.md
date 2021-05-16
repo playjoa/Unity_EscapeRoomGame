@@ -26,7 +26,10 @@ https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 Works on (PC Windows) <br>
 Available Languages: <strong>English, Portuguese </strong><br>
 
-Download .rar file inside "BuildGame/WindowsBuild", place in desired folder on your machine. Unzip and launch "Escape Room.exe". You can send the icon to your desktop if you want too. <br>
+## Download Links:
+<strong> <a href='https://playjoa.itch.io/escape-room'> PC (Itch.io) </a> </strong> 
+<strong> <a href='https://play.google.com/store/apps/details?id=com.CrossBlack.EscapeRoom'> Android (Google Play) </a> </strong> 
+<strong> <a href='https://apps.apple.com/app/id1567825003'> iOS (AppStore) </a> </strong> 
 
 ### How to play:
 

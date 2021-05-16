@@ -238,3 +238,5 @@ MonoBehaviour:
     translatedText: Buy No Ads to help us make more games! :D
   - keyText: buynoads
     translatedText: Buy No Ads!
+  - keyText: rate
+    translatedText: Rate Us!

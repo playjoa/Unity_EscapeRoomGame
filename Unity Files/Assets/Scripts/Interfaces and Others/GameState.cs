@@ -64,6 +64,7 @@
 
     public static void SwitchToCutscene()
     {
+        UI_Manager.Instance.ToggleUI_Inputs(false);
         UI_Manager.Instance.ToggleCutscene();
         SetState(State.OnCutscene);
     }
