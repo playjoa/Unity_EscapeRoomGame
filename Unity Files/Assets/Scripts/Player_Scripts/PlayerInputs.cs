@@ -26,12 +26,8 @@ public class PlayerInputs : MonoBehaviour
             s_JoyMovement = joyMovement;
 
             CreateButtonDictionary();
-
-            UI_Manager.Instance.ToggleUI_Inputs(true);
             return;
         }
-
-        UI_Manager.Instance.ToggleUI_Inputs(false);
     }
 
     void CreateButtonDictionary()

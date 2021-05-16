@@ -129,11 +129,13 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleTutorialScreen()
     {
+        ToggleUI_Inputs(false);
         ActivateIndividualScreen("tutorial");
     }
 
     public void ToggleGamePlayScreen()
     {
+        ToggleUI_Inputs(true);
         ActivateIndividualScreen("gameplay");
     }
 
@@ -154,7 +156,8 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleUI_Inputs(bool value)
     {
-        UI_MobileInputs.SetActive(value);
+        if(PlayerInputs.isOnMobile)
+            UI_MobileInputs.SetActive(value);
     }
 
     public void TogglePauseScreen(bool value)
