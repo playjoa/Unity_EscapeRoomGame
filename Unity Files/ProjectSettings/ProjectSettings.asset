@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: CrossBlack
-  productName: Escape Room 3D
+  productName: Escape Room!
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.011764706, g: 0.6509804, b: 0.47058824, a: 1}
@@ -41,6 +41,8 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 1925c0fb2deed6e40bade219027b3121, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: aa68a827e0b5e8e4c935bccc80b00f19, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -148,7 +150,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.CrossBlack.EscapeRoom3D
+    Android: com.CrossBlack.EscapeRoom
     Standalone: com.JoaoMilone.EscapeRoom
   buildNumber:
     Standalone: 0
@@ -241,15 +243,15 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{dedicated}: KyEscapeRoom.keystore'
+  AndroidKeyaliasName: game dev
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -769,7 +771,9 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Analytics: 1
     Collab: 1
+    Purchasing: 1
     UNet: 1
   luminIcon:
     m_Name: 

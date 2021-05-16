@@ -1,0 +1,12 @@
+AdMob:
+
+Android: (ca-app-pub-5280110389878142~2799772519)
+- Inter:
+ca-app-pub-5280110389878142/7860527509
+
+iOS: (ca-app-pub-5280110389878142~9983293818)
+- Inter:
+ca-app-pub-5280110389878142/2136948603
+
+
+4,99 No Ads (noadsescaperoom)

@@ -29,7 +29,7 @@ MonoBehaviour:
   - keyText: moveinfo
     translatedText: 'Para se movimentar use:'
   - keyText: lookinfo
-    translatedText: 'Use o mouse para olhar em volta:'
+    translatedText: 'Use para olhar em volta:'
   - keyText: clickinfo
     translatedText: 'Clique com o mouse para interagir:'
   - keyText: tutorial
@@ -38,7 +38,7 @@ MonoBehaviour:
       Complete todas para concluir o puzzle.\n- Procure por pistas pela casa, elas
       ir\xE3o ajudar a realizar as tasks.\n- Ap\xF3s completar todos os puzzles a
       porta ir\xE1 se abrir e voc\xEA poder\xE1 sair da casa.\n- Voc\xEA ter\xE1
-      15 minutos para escapar.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBoa
+      15 minutos para escapar.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBoa
       Sorte!"
   - keyText: back
     translatedText: Voltar
@@ -179,3 +179,18 @@ MonoBehaviour:
       que lembrem a senha perto do teclado num\xE9rico!"
   - keyText: secretnote2
     translatedText: Lareiras podem esconder coisas muito interessantes!
+  - keyText: clickinfomobile
+    translatedText: 'Clique para interagir:'
+  - keyText: restore
+    translatedText: Restore Purchase
+  - keyText: privacy
+    translatedText: "Pol\xEDtica de Privacidade"
+  - keyText: likegame
+    translatedText: Curte nossos jogos?
+  - keyText: buy
+    translatedText: Comprar
+  - keyText: descnoads
+    translatedText: Compre para ficar sem ads e ajudar a gente a fazer mais jogos!
+      :D
+  - keyText: buynoads
+    translatedText: Comprar Sem Ads!
