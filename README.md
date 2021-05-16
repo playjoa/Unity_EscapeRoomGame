@@ -27,9 +27,9 @@ Works on (PC Windows) <br>
 Available Languages: <strong>English, Portuguese </strong><br>
 
 ## Download Links:
-<strong> <a href='https://playjoa.itch.io/escape-room'> PC (Itch.io) </a> </strong> 
-<strong> <a href='https://play.google.com/store/apps/details?id=com.CrossBlack.EscapeRoom'> Android (Google Play) </a> </strong> 
-<strong> <a href='https://apps.apple.com/app/id1567825003'> iOS (AppStore) </a> </strong> 
+<strong> <a href='https://playjoa.itch.io/escape-room'> PC (Itch.io) </a> </strong>  <br>
+<strong> <a href='https://play.google.com/store/apps/details?id=com.CrossBlack.EscapeRoom'> Android (Google Play) </a> </strong>  <br>
+<strong> <a href='https://apps.apple.com/app/id1567825003'> iOS (AppStore) </a> </strong>  <br>
 
 ### How to play:
 
