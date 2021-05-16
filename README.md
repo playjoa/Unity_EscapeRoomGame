@@ -21,15 +21,15 @@ https://assetstore.unity.com/packages/2d/gui/icons/clean-flat-icons-98117 <br>
 - LeanTween <br>
 https://assetstore.unity.com/packages/tools/animation/leantween-3595 <br>
 
-### How to Install:
+## How to Install:
 
 Works on (PC Windows) <br>
 Available Languages: <strong>English, Portuguese </strong><br>
 
-## Download Links:
-<strong> <a href='https://playjoa.itch.io/escape-room'> PC (Itch.io) </a> </strong>  <br>
-<strong> <a href='https://play.google.com/store/apps/details?id=com.CrossBlack.EscapeRoom'> Android (Google Play) </a> </strong>  <br>
-<strong> <a href='https://apps.apple.com/app/id1567825003'> iOS (AppStore) </a> </strong>  <br>
+### Download Links:
+<strong> <a href='https://playjoa.itch.io/escape-room'> - PC (Itch.io) </a> </strong>  <br>
+<strong> <a href='https://play.google.com/store/apps/details?id=com.CrossBlack.EscapeRoom'> - Android (Google Play) </a> </strong>  <br>
+<strong> <a href='https://apps.apple.com/app/id1567825003'> - iOS (AppStore) </a> </strong>  <br>
 
 ### How to play:
 
