@@ -80,12 +80,12 @@ public class CameraMovement : MonoBehaviour
 
     float X_ValueWithSens() 
     {
-        return PlayerInputs.Camera_X_Movement * Time.deltaTime * mouseSensX;
+        return PlayerInputs.Instance.Camera_X_Movement * Time.deltaTime * mouseSensX;
     }
 
     float Y_ValueWithSens()
     {
-        return PlayerInputs.Camera_Y_Movement * Time.deltaTime * mouseSensY;
+        return PlayerInputs.Instance.Camera_Y_Movement * Time.deltaTime * mouseSensY;
     }
 
     float RotationClamped(float refRotation) 

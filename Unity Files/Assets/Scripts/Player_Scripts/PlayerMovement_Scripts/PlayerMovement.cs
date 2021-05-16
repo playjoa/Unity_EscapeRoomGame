@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         if (!canJump)
             return;
 
-        if (PlayerInputs.PressedJump && isGrounded)      
+        if (PlayerInputs.Instance.PressedJump && isGrounded)      
             gravityVelocity.y = JumpForce();      
     }
 
@@ -99,8 +99,8 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 PlayerMovementDirection()
     {
-        Vector3 baseDirection = playerTransform.right * PlayerInputs.MoveInputs().x +
-                                playerTransform.forward * PlayerInputs.MoveInputs().y;
+        Vector3 baseDirection = playerTransform.right * PlayerInputs.Instance.MoveInputs().x +
+                                playerTransform.forward * PlayerInputs.Instance.MoveInputs().y;
 
         baseDirection *= playerHorizontalSpeed * Time.deltaTime;
         return baseDirection;

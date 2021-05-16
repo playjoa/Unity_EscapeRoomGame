@@ -13,7 +13,9 @@ public class PlayerInteractions : MonoBehaviour
     private GameObject previousHittingObject = null;
     private InteractableObject currentObject;
     private RaycastHit hitInfo = new RaycastHit();
-    
+
+    private PickUpObject currentPickedUpObject;
+
     void Update()
     {
         if (fpsCamera == null)
@@ -24,6 +26,29 @@ public class PlayerInteractions : MonoBehaviour
 
         CheckForObject();
         CheckIfInteracted();
+    }
+
+    void SavePickUpObjectIfAvailable()
+    {
+        if (CurrentHittingObject().GetComponent<PickUpObject>())
+        {
+            currentPickedUpObject = CurrentHittingObject().GetComponent<PickUpObject>();
+            return;
+        }
+
+        currentPickedUpObject = null;
+    }
+
+    bool LetGoOfObject()
+    {
+        if (currentPickedUpObject != null)
+        {
+            currentPickedUpObject.LetGoObject();
+            currentPickedUpObject = null;
+            return true;
+        }
+
+        return false;
     }
 
     private void CheckForObject()
@@ -41,18 +66,25 @@ public class PlayerInteractions : MonoBehaviour
 
     void CheckIfInteracted()
     {
-        if (PlayerInputs.PressedInteracted)
+        if (PlayerInputs.Instance.PressedInteracted)
         {
             if (currentObject == null)
                 return;
 
+            if (LetGoOfObject())
+                return;
+
             SoundManager.PlaySoundInList("interact", 1);
             currentObject.Interact();
+            SavePickUpObjectIfAvailable();
         }
     }
 
     void NoObjectInReachLogic() 
     {
+        if (PlayerInputs.Instance.PressedInteracted)
+            LetGoOfObject();
+
         if (previousHittingObject != null)
         {
             if (currentObject != null)

@@ -56,10 +56,7 @@ public class PickUpObject : MonoBehaviour, InteractableObject
     void ProcessInteract()
     {
         if (IsPickingUp)
-        {
-            LetGoObject();
             return;
-        }
 
         PickObject();
     }

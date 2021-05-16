@@ -4,7 +4,7 @@ public static class MouseLocker
 {
     public static void LockMouse() 
     {
-        if (PlayerInputs.isOnMobile)
+        if (PlayerInputs.Instance.isOnMobile)
             return;
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -13,7 +13,7 @@ public static class MouseLocker
 
     public static void FreeMouse()
     {
-        if (PlayerInputs.isOnMobile)
+        if (PlayerInputs.Instance.isOnMobile)
             return;
 
        Cursor.lockState = CursorLockMode.None;

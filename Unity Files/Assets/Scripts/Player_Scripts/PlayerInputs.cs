@@ -9,9 +9,19 @@ public class PlayerInputs : MonoBehaviour
     [SerializeField]
     private Joystick joyMovement, joyLook;
 
-    private static Dictionary<string, UI_InputButton> UI_mobileButtons;
+    private Dictionary<string, UI_InputButton> UI_mobileButtons;
 
-    private static Joystick s_JoyMovement, s_JoyLook;
+    //private static Joystick s_JoyMovement, s_JoyLook;
+
+    public static PlayerInputs Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
+    }
 
     private void Start()
     {
@@ -22,24 +32,30 @@ public class PlayerInputs : MonoBehaviour
     {
         if (_isMobile)
         {
-            s_JoyLook = joyLook;
-            s_JoyMovement = joyMovement;
+            //s_JoyLook = joyLook;
+            //s_JoyMovement = joyMovement;
 
             CreateButtonDictionary();
             return;
         }
     }
 
+    private void OnDisable()
+    {
+        //s_JoyLook = null;
+        //s_JoyMovement = null;
+    }
+
     void CreateButtonDictionary()
     {
-        UI_InputButton[] availableButtons = FindObjectsOfType<UI_InputButton>();
+        UI_InputButton[] availableButtons = Resources.FindObjectsOfTypeAll<UI_InputButton>();
         UI_mobileButtons = new Dictionary<string, UI_InputButton>();
 
         foreach (UI_InputButton button in availableButtons)
             UI_mobileButtons.Add(button.idButton, button);
     }
 
-    static bool ButtonPressProcessor(string buttonToCheckPress)
+    bool ButtonPressProcessor(string buttonToCheckPress)
     {
         if (isOnMobile)
         {
@@ -52,30 +68,30 @@ public class PlayerInputs : MonoBehaviour
         return Input.GetButtonDown(buttonToCheckPress);
     }
 
-    static float Cam_X()
+    float Cam_X()
     {
         if (isOnMobile)
         {
-            return s_JoyLook.Horizontal;
+            return joyLook.Horizontal;
         }
 
         return Input.GetAxis("Mouse X");
     }
 
-    static float Cam_Y()
+    float Cam_Y()
     {
         if (isOnMobile)
         {
-            return s_JoyLook.Vertical;
+            return joyLook.Vertical;
         }
 
         return Input.GetAxis("Mouse Y");
     }
 
-    public static Vector2 MoveInputs()
+    public Vector2 MoveInputs()
     {
         if (isOnMobile)
-            return new Vector2(s_JoyMovement.Horizontal, s_JoyMovement.Vertical);
+            return new Vector2(joyMovement.Horizontal, joyMovement.Vertical);
 
 
         float xValue = Input.GetAxis("Horizontal");
@@ -84,24 +100,24 @@ public class PlayerInputs : MonoBehaviour
         return new Vector2(xValue, yValue);
     }
 
-    public static bool isOnMobile => s_JoyLook != null;
+    public bool isOnMobile => _isMobile;
 
-    public static float Camera_X_Movement => Cam_X();
+    public float Camera_X_Movement => Cam_X();
 
-    public static float Camera_Y_Movement => Cam_Y();
+    public float Camera_Y_Movement => Cam_Y();
 
-    public static bool PressedPaused => ButtonPressProcessor("Pause");
+    public bool PressedPaused => ButtonPressProcessor("Pause");
 
-    public static bool PressedInteracted => ButtonPressProcessor("Interact");
+    public bool PressedInteracted => ButtonPressProcessor("Interact");
 
-    public static bool PressedJump => ButtonPressProcessor("Jump");
+    public bool PressedJump => ButtonPressProcessor("Jump");
 
-    public static void ResetJoySticks()
+    public void ResetJoySticks()
     {
         if (!isOnMobile)
             return;
 
-        s_JoyLook.ResetJoyStick();
-        s_JoyMovement.ResetJoyStick();
+        joyLook.ResetJoyStick();
+        joyMovement.ResetJoyStick();
     }
 }

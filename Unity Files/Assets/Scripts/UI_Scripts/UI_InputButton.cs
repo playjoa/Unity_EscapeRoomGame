@@ -18,6 +18,8 @@ public class UI_InputButton : MonoBehaviour, IPointerClickHandler
 
     IEnumerator MakeClick()
     {
+        Debug.Log("Pressed (id): " + _buttonID);
+
         isPressing = true;
         yield return new WaitForEndOfFrame();
         isPressing = false;

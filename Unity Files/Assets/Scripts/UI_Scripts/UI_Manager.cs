@@ -156,7 +156,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleUI_Inputs(bool value)
     {
-        if(PlayerInputs.isOnMobile)
+        if(PlayerInputs.Instance.isOnMobile)
             UI_MobileInputs.SetActive(value);
     }
 

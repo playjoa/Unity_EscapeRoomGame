@@ -32,7 +32,7 @@ public class PreventLeavingPlayableArea : MonoBehaviour
 
     void TeleportBackToOrigin()
     {
-        if(objectOrigin!= null)
+        if(objectOrigin != null)
             objectOrigin.LetGoObject();
        
         transform.localPosition = initialPosition;
