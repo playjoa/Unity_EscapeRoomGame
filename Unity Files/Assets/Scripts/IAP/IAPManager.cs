@@ -14,6 +14,9 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
     private void Awake()
     {
+        if (!ConfigScript.isMobileDevice())
+            return;
+
         if (!Instance)
         {
             Instance = this;

@@ -88,4 +88,12 @@ public class ConfigScript : MonoBehaviour
                 txtOptions[i].color = notSelectedColor;
         }
     }
+
+    public static bool isMobileDevice()
+    {
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            return true;
+
+        return false;
+    }
 }

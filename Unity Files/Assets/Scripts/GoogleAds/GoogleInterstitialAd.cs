@@ -18,6 +18,9 @@ public class GoogleInterstitialAd : MonoBehaviour {
 
     void Start ()
     {
+        if (!ConfigScript.isMobileDevice())
+            return;
+
         RequestInterstitial();
 
         // Called when an ad request has successfully loaded.
@@ -54,6 +57,9 @@ public class GoogleInterstitialAd : MonoBehaviour {
 
     public void ShowAd()
     {
+        if (!ConfigScript.isMobileDevice())
+            return;
+
         if (PlayerPrefs.GetInt("noADS") == 1)
             return;
 

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 
 public class PlayerInputs : MonoBehaviour
 {
-    [SerializeField]
-    private bool _isMobile = false;
+    private bool _isMobile => ConfigScript.isMobileDevice();
 
     [SerializeField]
     private Joystick joyMovement, joyLook;

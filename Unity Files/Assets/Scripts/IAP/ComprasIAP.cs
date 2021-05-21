@@ -13,6 +13,13 @@ public class ComprasIAP : MonoBehaviour
 
     private void OnEnable()
     {
+        if (!ConfigScript.isMobileDevice())
+        {
+            btnNoAds.SetActive(false);
+            btnRestore.SetActive(false);
+            return;
+        }
+
         if (Application.platform == RuntimePlatform.Android)
             btnRestore.SetActive(false);
         
