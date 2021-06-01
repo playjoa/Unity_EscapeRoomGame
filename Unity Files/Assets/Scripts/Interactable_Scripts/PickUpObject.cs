@@ -56,7 +56,10 @@ public class PickUpObject : MonoBehaviour, InteractableObject
     void ProcessInteract()
     {
         if (IsPickingUp)
+        {
+            LetGoObject();
             return;
+        }
 
         PickObject();
     }
@@ -77,6 +80,7 @@ public class PickUpObject : MonoBehaviour, InteractableObject
         if (!canPickUp)
             return;
 
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         rb.isKinematic = false;
         transform.parent = previousParent;
     }

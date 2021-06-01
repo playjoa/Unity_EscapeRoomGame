@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\Player_Scripts\GameInitializer.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
     <Compile Include="Assets\Scripts\Interactable_Scripts\GenericAnimationToTrigger.cs" />
+    <Compile Include="Assets\Scripts\Other_Scripts\RateUS.cs" />
     <Compile Include="Assets\Balaso Software\Runtime\AppTrackingTransparency.cs" />
     <Compile Include="Assets\Scripts\Other_Scripts\MouseLocker.cs" />
     <Compile Include="Assets\Scripts\GoogleAds\GoogleInterstitialAd.cs" />
@@ -133,12 +134,30 @@
     <Compile Include="Assets\Scripts\GameLogic_Scripts\GameOverScreenLoader.cs" />
     <Compile Include="Assets\Scripts\IAP\IAPManager.cs" />
     <Compile Include="Assets\Scripts\Puzzles&amp;Tasks_Scritps\Basket Puzzle\BasketBallTask.cs" />
-    <Compile Include="Assets\Scripts\Other_Scripts\RateUS.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Scripts\PolygonBeamStatic.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonEffectCycler.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonLoopScript.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonButtonScript.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonSceneSelect.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Scripts\PolygonLightFade.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonFireProjectile.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Scripts\PolygonSoundSpawn.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonOrbit.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Scripts\PolygonRotation.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonBeamScript.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Scripts\PolygonLightFlicker.cs" />
+    <Compile Include="Assets\Polygon Arsenal\Demo\Scripts\PolygonProjectileScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
+     <None Include="Assets\Polygon Arsenal\Shaders\Standard\PolyIntense.Shader" />
+     <None Include="Assets\Polygon Arsenal\Shaders\Standard\PolyRimLightSelective.shader" />
+     <None Include="Assets\Polygon Arsenal\Shaders\Standard\PolyRimLightSolid.shader" />
+     <None Include="Assets\Polygon Arsenal\Polygon Arsenal 2.0 - Documentation.txt" />
      <None Include="Assets\Scripts\GoogleAds\Configs (IDs).txt" />
+     <None Include="Assets\Polygon Arsenal\Shaders\Standard\PolyRimLightTransparent.shader" />
+     <None Include="Assets\Polygon Arsenal\Shaders\Standard\PolyLitSurface.shader" />
      <None Include="Assets\PolygonCity\Change_Log.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

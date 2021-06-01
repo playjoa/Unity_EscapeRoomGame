@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4096292449270370}
   - component: {fileID: 33427062993045418}
   - component: {fileID: 23911378700132656}
-  - component: {fileID: 6298353358399558280}
+  - component: {fileID: 1419070347684491119}
   m_Layer: 9
   m_Name: SM_Bld_House_Interior_Floor_01
   m_TagString: Untagged
@@ -56,10 +56,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 28646867ddcf90a4989276acd313ea43, type: 2}
+  - {fileID: 2100000, guid: 90b40a9eb4f2e8a4ca68077789ba069b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,8 +81,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6298353358399558280
-MeshCollider:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1419070347684491119
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e47339e481f85d349b203d0fb9460a10, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 4.440892e-16, z: 2.5}
+  m_Center: {x: -1.25, y: 2.220446e-16, z: -1.25}

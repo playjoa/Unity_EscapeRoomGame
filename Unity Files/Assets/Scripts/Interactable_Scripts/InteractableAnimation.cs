@@ -45,7 +45,7 @@ public class InteractableAnimation : MonoBehaviour, InteractableObject
 
     void ManageHiddenObject() 
     {
-        if (hiddenObject == null || hiddenObject.activeSelf)
+        if (!hiddenObject || hiddenObject.activeSelf)
             return;
 
         hiddenObject.SetActive(CurrentStatusBoolAnimation);

@@ -14,7 +14,7 @@ public class PlayerInteractions : MonoBehaviour
     private InteractableObject currentObject;
     private RaycastHit hitInfo = new RaycastHit();
 
-    private PickUpObject currentPickedUpObject;
+    private PickUpObject currentPickedUpObject = null;
 
     void Update()
     {
@@ -28,50 +28,63 @@ public class PlayerInteractions : MonoBehaviour
         CheckIfInteracted();
     }
 
-    void SavePickUpObjectIfAvailable()
-    {
-        if (CurrentHittingObject().GetComponent<PickUpObject>())
-        {
-            currentPickedUpObject = CurrentHittingObject().GetComponent<PickUpObject>();
-            return;
-        }
-
-        currentPickedUpObject = null;
-    }
-
-    bool LetGoOfObject()
-    {
-        if (currentPickedUpObject != null)
-        {
-            currentPickedUpObject.LetGoObject();
-            currentPickedUpObject = null;
-            return true;
-        }
-
-        return false;
-    }
-
     private void CheckForObject()
     {
         bool hasHitAnything = CheckIfTheresAGameObjectInReach();
 
         if (hasHitAnything)
         {
-            CheckIfNewObjectIsDifferentAndSetUp();
+            CheckIfNewObjectIsDifferentThanPreviousOneAndSetUp();
             return;
         }
 
         NoObjectInReachLogic();
     }
 
+    bool CheckIfTheresAGameObjectInReach()
+    {
+        return Physics.Raycast(CameraPosition, CameraDirection, out hitInfo, reachRange);
+    }
+
+    void CheckIfNewObjectIsDifferentThanPreviousOneAndSetUp()
+    {
+        if (previousHittingObject != CurrentHittingObject())
+        {
+            previousHittingObject = CurrentHittingObject();
+            GetPossibleInteractableObject();
+        }
+    }
+
+    void SavePickUpObjectIfAvailable()
+    {
+        PickUpObject possiblePickUpObject = CurrentHittingObject().GetComponent<PickUpObject>();
+
+        if (possiblePickUpObject)
+        {
+            currentPickedUpObject = possiblePickUpObject;
+            return;
+        }
+    }
+
+    bool LetGoOfObject()
+    {
+        if (currentPickedUpObject)
+        {
+            currentPickedUpObject.LetGoObject();
+            currentPickedUpObject = null;
+            return true;
+        }
+        return false;
+    }
+
     void CheckIfInteracted()
     {
         if (PlayerInputs.Instance.PressedInteracted)
         {
-            if (currentObject == null)
+            if (LetGoOfObject())
                 return;
 
-            if (LetGoOfObject())
+            if (currentObject == null)
                 return;
 
             SoundManager.PlaySoundInList("interact", 1);
@@ -97,24 +110,10 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
-    void CheckIfNewObjectIsDifferentAndSetUp()
-    {
-        if (previousHittingObject != CurrentHittingObject())
-        {
-            previousHittingObject = CurrentHittingObject();
-            GetPossibleInteractableObject();
-        }
-    }
-
     Vector3 CameraPosition => fpsCamera.transform.position;
 
 
     Vector3 CameraDirection => fpsCamera.transform.forward;
-
-    bool CheckIfTheresAGameObjectInReach() 
-    {
-        return Physics.Raycast(CameraPosition, CameraDirection, out hitInfo, reachRange);
-    }
 
     GameObject CurrentHittingObject() 
     {
